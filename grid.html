@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <style>
+    /* mobile first */
+    .theGrid{
+      display: grid;
+      grid-gap: 10px;
+      height: 50vh;
+      width: 50vh;
+      border: 3px solid black;
+      margin: 20px;
+      padding: 5px;
+    }
+
+    .theGrid div {
+      font-size: 5em;
+      text-align: center;
+      line-height: 100px;
+    }
+
+    /* lo que se aplica primero a cualquier dispositivo: movil */
+    .theGrid{
+      grid-template-columns: repeat(2fr);
+      grid-template-rows: 1fr;
+    }
+
+    .first{
+      grid-column: 1 / 3;
+      border: 3px solid green;
+
+    }
+
+    .second{
+      grid-column: 2 / 3;
+      border: 3px solid green;
+
+    }
+    @media screen and (min-width: 700px) {
+      .theGrid {
+        grid-template-columns: repeat(2fr);
+        grid-template-rows: repeat(2fr);
+      }
+      .theGrid div{
+        border: 3px solid darkblue;
+      }
+      .first {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        opacity: 0.5;
+      }
+      .second{
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+      }
+    }
+
+    @media screen and (min-width: 1000px) {
+      .theGrid {
+        grid-template-columns: repeat(1fr, 4);
+        grid-template-rows: repeat(1fr, 3);
+      }
+      .theGrid div{
+        border: 3px solid orange;
+      }
+      .first {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+      }
+      .second{
+        grid-column: 3 / 5;
+        grid-row: 2 / 4;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="theGrid">
+    <div class="first">A</div>
+    <div class="second">B</div>
+  </div>
+</body>
+</html>
