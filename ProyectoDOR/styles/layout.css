@@ -1,0 +1,372 @@
+@import url(https://fonts.googleapis.com/css?family=Inter);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+}
+
+.aside {
+  background: #fff;
+  border-radius: 0px 0px 150px 150px / 0px 0px 45px 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  /* width: 20%; */
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: height 1s ease;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  /* position: sticky;
+  top: 0; */
+  box-shadow: 0px 4.7px 9.8px rgba(0, 0, 0, 0.058),
+    0px 12px 22.2px rgba(0, 0, 0, 0.084), 0px 22.5px 38.7px rgba(0, 0, 0, 0.103),
+    0px 36.8px 61.5px rgba(0, 0, 0, 0.12), 0px 56px 94.9px rgba(0, 0, 0, 0.137),
+    0px 81.7px 148px rgba(0, 0, 0, 0.156),
+    0px 117.6px 245.7px rgba(0, 0, 0, 0.182),
+    0px 177px 491px rgba(0, 0, 0, 0.24);
+}
+
+.aside.active {
+  display: block;
+  height: 85vh;
+}
+
+.user {
+  margin: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.user p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.user-template {
+  height: 15vw;
+  width: 15vw;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.aside-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 2em;
+  border-bottom: 1px solid #ccc; /* Optional: Add a border at the bottom of the item */
+  position: relative;
+}
+
+.submenu-arrow {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid #333;
+  position: absolute;
+  right: 10px; 
+  transform: rotate(90deg); 
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.hamburger-toggle {
+  display: block;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.hamburger-toggle span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px auto;
+  transition: 0.4s;
+}
+
+header {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 2vh 0;
+  font-size: 1.5em;
+  border: 2px solid lightgray;
+  justify-content: space-around;
+  /* justify-content: center; */
+}
+
+header a {
+  font-weight: bold;
+  text-decoration: none;
+  /* margin-left: auto; */
+  /* margin-right: 1em; */
+  color: black;
+}
+
+nav {
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 5em;
+  align-items: center;
+  margin-left: 1.5em;
+}
+
+header h1 {
+  color: #666666;
+  font-size: 1.75em;
+}
+
+main {
+  padding: 0 1em;
+
+}
+
+main h2 {
+  margin: .5em 0;
+}
+
+.box-template {
+  background-color: #f6f6f6;
+  border-radius: 20px 20px 20px 20px;
+  margin: 0.5em 0em;
+  min-height: 20vh;
+}
+
+.user-info img {
+  border-radius: 50%;
+  margin-right: 10px;
+  max-width: 25%;
+  max-height: 25%;
+}
+
+.catalog-guides {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.catalog-guides div {
+  flex-basis: 48%;
+}
+
+.catalog-items {
+  position: relative;
+}
+
+.catalog-guides .sale-icon {
+  width: 25%;
+  height: auto;
+  max-height: 100%;
+  position: absolute;
+  top: 80%;
+  left: 80%;
+}
+
+.button-container {
+  text-align: center; /* Center the button horizontally */
+  margin: 1em 0;
+}
+
+.unlock-all-button {  
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color,border-color,color,box-shadow,filter;
+  transition-duration: .3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 17px 48px;
+  color: #fff;
+  background-color: #646464;
+  height: 48px;
+  
+
+}
+
+.unlock-all-button:hover {
+  background-color: #464646;
+  border-color: #464646;
+  color: #fff;
+}
+footer {
+  background: gray;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  margin-top: auto;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  width: 300%;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  flex: 1 0 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.carousel-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel-control {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bbb;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-dot.active {
+  background-color: #bbb3b3;
+}
+
+.social-posts {
+  width: 100%;
+  max-width: 400px; /* Set a maximum width for the tweets */
+  margin: 0 auto; /* Center the tweets */
+}
+
+.post {
+  background-color: #f5f8fa; /* Twitter-like background color */
+  border: 1px solid #e1e8ed; /* Border color */
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: flex-start; 
+  justify-content: space-between; 
+}
+
+.user-info img.twitter-logo {
+  width: 20px;
+  height: 20px;
+}
+
+.post img {
+  border-radius: 50%; 
+  margin-right: 10px;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.post p {
+  font-size: 14px;
+  color: #1b2836; 
+  line-height: 1.4;
+  margin: 10px 0;
+}
+
+.post .username {
+  font-weight: bold;
+  color: #1da1f2; 
+}
+
+.post .timestamp {
+  font-size: 12px;
+  color: #657786; 
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-rows {
+  display: block;
+  margin-bottom: 2vh;
+}
+
+.footer-rows h3 {
+  margin-bottom: 1vh;
+}
+
+.footer-rows ul li {
+  display: inline;
+  margin-right: 1vh;
+}
+
+.email-contact {
+  margin-top: 1vh;
+}
+
+.email-contact form {
+  display: block;
+  margin-top: 1vh;
+}
+
+.email-contact input[type="email"] {
+  width: 100%;
+  margin-bottom: 1vh;
+}
+
+.email-contact input[type="submit"] {
+  margin-bottom: 1vh;
+}
