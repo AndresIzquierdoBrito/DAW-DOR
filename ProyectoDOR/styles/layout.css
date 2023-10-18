@@ -159,11 +159,40 @@ main h2 {
   min-height: 20vh;
 }
 
+.user-info {
+  display: flex;
+  margin-bottom: 1em;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 .user-info img {
   border-radius: 50%;
   margin-right: 10px;
-  max-width: 25%;
-  max-height: 25%;
+  max-width: 40%;
+  max-height: 30%;
+}
+
+.user-buttons {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+}
+
+.user-buttons button {
+  width: 100%;
+  flex: 1;
+  font-size: 1.1em;
+  margin-bottom: .6em;
+  border-radius: 10px;
+  border: none;
+  background-color: #7d7d7d;
+  color: white;
+  padding: .3em 1em;
+}
+
+.user-buttons button:last-child {
+  margin-right: 0;
 }
 
 .catalog-guides {
@@ -172,12 +201,60 @@ main h2 {
   flex-wrap: wrap;
 }
 
+
 .catalog-guides div {
   flex-basis: 48%;
+  background-size: contain !important;
+  background-position: center !important ;
 }
+
+
+.catalog-guides div:nth-child(1){
+  background: linear-gradient(180deg, rgba(2, 0, 36, 0) 0%, rgba(246, 246, 246, 0) 45%, rgba(246, 246, 246, 1) 90%), url(../media/stress.jpg);
+}
+
+.catalog-guides div:nth-child(2){
+  background: linear-gradient(180deg, rgba(2, 0, 36, 0) 0%, rgba(246, 246, 246, 0) 45%, rgba(246, 246, 246, 1) 90%), url(../media/sleep.jpg);
+}
+
+.catalog-guides div:nth-child(3){
+  background: linear-gradient(180deg, rgba(2, 0, 36, 0) 0%, rgba(246, 246, 246, 0) 45%, rgba(246, 246, 246, 1) 90%), url(../media/mindfulness.jpg);
+}
+
+.catalog-guides div:nth-child(4){
+  background: linear-gradient(180deg, rgba(2, 0, 36, 0) 0%, rgba(246, 246, 246, 0) 45%, rgba(246, 246, 246, 1) 90%), url(../media/relationships.jpg);
+
+}
+
 
 .catalog-items {
   position: relative;
+}
+
+.catalog-items h3 {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  margin: 0;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.catalog-items .price{
+  position: absolute;
+  background-color: #b4b4b4;
+  right: 0;
+  margin: 0;
+  padding: .5em .5em;
+  font-size: 1.4rem;
+  border-radius: 0px 20px 0px 20px;
+  color: #333;
+}
+
+/* Why without catalog items its more specific and doesnt get prio */
+.catalog-items .price-sale { 
+  background-color: rgb(255, 118, 118);
+  font-weight: bold;
 }
 
 .catalog-guides .sale-icon {
@@ -287,6 +364,50 @@ footer {
   background-color: #bbb3b3;
 }
 
+.latest-posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.article img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.article-content {
+  padding: 20px;
+}
+
+.article-title {
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.article-title span {
+  font-weight: bold;
+  color: #515151;
+}
+
+.article-excerpt {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
 .social-posts {
   width: 100%;
   max-width: 400px; /* Set a maximum width for the tweets */
@@ -301,13 +422,13 @@ footer {
   margin-bottom: 20px;
 }
 
-.user-info {
+.twitter-user-info {
   display: flex;
   align-items: flex-start; 
   justify-content: space-between; 
 }
 
-.user-info img.twitter-logo {
+.twitter-user-info img.twitter-logo {
   width: 20px;
   height: 20px;
 }

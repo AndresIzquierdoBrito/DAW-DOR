@@ -1,224 +1,263 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - MindWell</title>
+    <link rel="stylesheet" href="styles/layout.css" />
+    <script src="./scripts/mainPage.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home - MindWell</title>
-  <link rel="stylesheet" href="styles/layout.css" />
-  <script src="./scripts/mainPage.js"></script>
-</head>
-
-<body>
-  <aside class="aside">
-    <div class="user">
-      <span class="user-template"></span>
-      <p>Usuario</p>
-    </div>
-    <div class="aside-item">
-      <h2>Meditate</h2>
-      <div class="submenu-arrow"></div>
-    </div>
-    <div class="aside-item">
-      <h2>Guides</h2>
-      <div class="submenu-arrow"></div>
-    </div>
-    <div class="aside-item">
-      <h2>Chat</h2>
-      <div class="submenu-arrow"></div>
-    </div>
-    <div class="aside-item">
-      <h2>Resources</h2>
-      <div class="submenu-arrow"></div>
-    </div>
-    <div class="upgrade-button"></div>
-    <div class="settings"></div>
-  </aside>
-  <div class="content">
-    <header>
-      <div class="hamburger-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
+  <body>
+    <aside class="aside">
+      <div class="user">
+        <span class="user-template"></span>
+        <p>Usuario</p>
       </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="main.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <a href="./main.html">
-        <h1 id="page-title">MindWell</h1>
-      </a>
-      <span class="user-template"></span>
-    </header>
-    <main>
-      <h2>Welcome</h2>
+      <div class="aside-item">
+        <h2>Meditate</h2>
+        <div class="submenu-arrow"></div>
+      </div>
+      <div class="aside-item">
+        <h2>Guides</h2>
+        <div class="submenu-arrow"></div>
+      </div>
+      <div class="aside-item">
+        <h2>Chat</h2>
+        <div class="submenu-arrow"></div>
+      </div>
+      <div class="aside-item">
+        <h2>Resources</h2>
+        <div class="submenu-arrow"></div>
+      </div>
+      <div class="upgrade-button"></div>
+      <div class="settings"></div>
+    </aside>
+    <div class="content">
+      <header>
+        <div class="hamburger-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="main.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="./main.html">
+          <h1 id="page-title">MindWell</h1>
+        </a>
+        <span class="user-template"></span>
+      </header>
+      <main>
+        <h2>Welcome</h2>
 
-      <section class="user-main-info box-template">
-        <div class="user-info">
+        <section class="user-info box-template">
           <img src="./media/user-avatar.png" alt="User Avatar" />
           <div class="user-text">
             <h3>Username</h3>
             <p>Basic</p>
+            <div class="user-buttons">
+              <button class="btn btn-primary">Progress</button>
+              <button class="btn btn-secondary">Chat</button>
+            </div>
           </div>
+        </section>
+
+        <h2>Guide packages</h2>
+
+        <section class="catalog-guides">
+          <div class="catalog-items box-template">
+            <h3>Stress</h3>
+            <p class="price price-sale">0.95€</p>
+            <img class="sale-icon" src="./media/sale-icon.png" alt="" />
+          </div>
+          <div class="catalog-items box-template">
+            <h3>Sleep</h3>
+            <p class="price price-sale">0.95€</p>
+            <img class="sale-icon" src="./media/sale-icon.png" alt="" />
+          </div>
+          <div class="catalog-items box-template">
+            <h3>Mindfulness</h3>
+            <p class="price">2.99€</p>
+          </div>
+          <div class="catalog-items box-template">
+            <h3>Relationships</h3>
+            <p class="price">2.99€</p>
+          </div>
+        </section>
+        <div class="button-container">
+          <button class="unlock-all-button">Unlock all</button>
         </div>
 
-      </section>
+        <h2>Experiences</h2>
 
-      <h2>Guide packages</h2>
+        <section class="carousel box-template">
+          <div class="carousel-container">
+            <div class="carousel-item">
+              <img src="./media/image2.jpeg" alt="Image 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="./media/image2.jpeg" alt="Image 2" />
+            </div>
+            <div class="carousel-item">
+              <img src="./media/image3.jpeg" alt="Image 3" />
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-control prev">&#8249;</button>
+            <div class="carousel-dots">
+              <button class="carousel-dot active"></button>
+              <button class="carousel-dot"></button>
+              <button class="carousel-dot"></button>
+            </div>
+            <button class="carousel-control next">&#8250;</button>
+          </div>
+        </section>
 
-      <section class="catalog-guides">
-        <div class="catalog-items box-template">
-          <h3>Mindfulnesss</h3>
-          <img class="sale-icon" src="./media/sale-icon.png" alt="" />
+        <h2>Articles</h2>
+
+        <section class="latest-posts">
+          <article class="article">
+            <img src="./media/optimism.jpg" alt="Article Image" />
+            <div class="article-content">
+              <h3 class="article-title">
+                <span>Positive Thinking:</span> The Key to Happiness
+              </h3>
+              <p class="article-excerpt">
+                Discover the science behind positive thinking and learn
+                practical tips to cultivate a positive mindset, enhance your
+                outlook on life, and improve your mental health.
+              </p>
+            </div>
+          </article>
+          <article class="article">
+            <div class="article-content">
+              <h3 class="article-title">
+                <img src="./media/mindfularticle.webp" alt="Article Image" />
+                <span>Mindfulness </span>in Daily Life
+              </h3>
+              <p class="article-excerpt">
+                Explore the benefits of mindfulness and find actionable
+                techniques to reduce stress, enhance self-awareness, and promote
+                inner peace in your everyday activities.
+              </p>
+            </div>
+          </article>
+          <article class="article">
+            <img src="./media/challenges.webp" alt="Article Image" />
+            <div class="article-content">
+              <h3 class="article-title">
+                <span>Building Resilience: </span>Overcoming Challenges
+              </h3>
+              <p class="article-excerpt">
+                Learn strategies to cope with stress, navigate difficulties, and
+                emerge stronger. Discover how to bounce back from setbacks and
+                build confidence in the face of adversity.
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <h2>Latest posts</h2>
+
+        <section class="social-posts">
+          <article class="post">
+            <div class="twitter-user-info">
+              <img src="./media/twitter-avatar.png" alt="User Avatar" />
+              <img
+                class="twitter-logo"
+                src="./media/twitter-logo.png"
+                alt="Twitter Logo"
+              />
+            </div>
+            <p>
+              <span class="username">Username</span> Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. #example #tweet
+            </p>
+            <span class="timestamp">2h ago</span>
+          </article>
+          <article class="post">
+            <div class="twitter-user-info">
+              <img src="./media/twitter-avatar.png" alt="User Avatar" />
+              <img
+                class="twitter-logo"
+                src="./media/twitter-logo.png"
+                alt="Twitter Logo"
+              />
+            </div>
+            <p>
+              <span class="username">Username</span> Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. #example #tweet
+            </p>
+            <span class="timestamp">7h ago</span>
+          </article>
+          <article class="post">
+            <div class="twitter-user-info">
+              <img src="./media/twitter-avatar.png" alt="User Avatar" />
+              <img
+                class="twitter-logo"
+                src="./media/twitter-logo.png"
+                alt="Twitter Logo"
+              />
+            </div>
+            <p>
+              <span class="username">Username</span> Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. #example #tweet
+            </p>
+            <span class="timestamp">14h ago</span>
+          </article>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-rows">
+          <h3>Contact</h3>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/"
+                ><img src="images/facebook.png" alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/"
+                ><img src="images/instagram.png" alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com/"
+                ><img src="images/twitter.png" alt="Twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/"
+                ><img src="images/tiktok.png" alt="TikTok"
+              /></a>
+            </li>
+          </ul>
+          <div class="email-contact">
+            <p>Stay updated on everything MindWell</p>
+            <form action="">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email here"
+              />
+              <input type="submit" value="Subscribe" id="submit" />
+            </form>
+          </div>
+          <ul>
+            <li><a href="about.html">Privacy Policy</a></li>
+            <li><a href="about.html">Terms & Conditions</a></li>
+            <li><a href="about.html">Cookie Consent</a></li>
+            <li><a href="about.html">Accessibility</a></li>
+          </ul>
         </div>
-        <div class="catalog-items box-template">
-          <img class="sale-icon" src="./media/sale-icon.png" alt="" />
-        </div>
-        <div class="catalog-items box-template"></div>
-        <div class="catalog-items box-template"></div>
-      </section>
-      <div class="button-container">
-        <button class="unlock-all-button">Unlock all</button>
-      </div>
-
-      <h2>Experiences</h2>
-
-      <section class="carousel box-template">
-        <div class="carousel-container">
-          <div class="carousel-item">
-            <img src="./media/image2.jpeg" alt="Image 1" />
-          </div>
-          <div class="carousel-item">
-            <img src="./media/image2.jpeg" alt="Image 2" />
-          </div>
-          <div class="carousel-item">
-            <img src="./media/image3.jpeg" alt="Image 3" />
-          </div>
-        </div>
-        <div class="carousel-controls">
-          <button class="carousel-control prev">&#8249;</button>
-          <div class="carousel-dots">
-            <button class="carousel-dot active"></button>
-            <button class="carousel-dot"></button>
-            <button class="carousel-dot"></button>
-          </div>
-          <button class="carousel-control next">&#8250;</button>
-        </div>
-      </section>
-
-      <h2>Articles</h2>
-
-      <section class="social-posts">
-        <article class="post">
-          <div class="user-info">
-            <img src="./media/twitter-avatar.png" alt="User Avatar" />
-            <img class="twitter-logo" src="./media/twitter-logo.png" alt="Twitter Logo" />
-          </div>
-          <p>
-            <span class="username">Username</span> Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. #example #tweet
-          </p>
-          <span class="timestamp">2h ago</span>
-        </article>
-        <article class="post">
-          <div class="user-info">
-            <img src="./media/twitter-avatar.png" alt="User Avatar" />
-            <img class="twitter-logo" src="./media/twitter-logo.png" alt="Twitter Logo" />
-          </div>
-          <p>
-            <span class="username">Username</span> Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. #example #tweet
-          </p>
-          <span class="timestamp">7h ago</span>
-        </article>
-        <article class="post">
-          <div class="user-info">
-            <img src="./media/twitter-avatar.png" alt="User Avatar" />
-            <img class="twitter-logo" src="./media/twitter-logo.png" alt="Twitter Logo" />
-          </div>
-          <p>
-            <span class="username">Username</span> Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. #example #tweet
-          </p>
-          <span class="timestamp">14h ago</span>
-        </article>
-      </section>
-
-      <h2>Latest posts</h2>
-
-      <section class="social-posts">
-        <article class="post">
-          <div class="user-info">
-            <img src="./media/twitter-avatar.png" alt="User Avatar" />
-            <img class="twitter-logo" src="./media/twitter-logo.png" alt="Twitter Logo" />
-          </div>
-          <p>
-            <span class="username">Username</span> Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. #example #tweet
-          </p>
-          <span class="timestamp">2h ago</span>
-        </article>
-        <article class="post">
-          <div class="user-info">
-            <img src="./media/twitter-avatar.png" alt="User Avatar" />
-            <img class="twitter-logo" src="./media/twitter-logo.png" alt="Twitter Logo" />
-          </div>
-          <p>
-            <span class="username">Username</span> Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. #example #tweet
-          </p>
-          <span class="timestamp">7h ago</span>
-        </article>
-        <article class="post">
-          <div class="user-info">
-            <img src="./media/twitter-avatar.png" alt="User Avatar" />
-            <img class="twitter-logo" src="./media/twitter-logo.png" alt="Twitter Logo" />
-          </div>
-          <p>
-            <span class="username">Username</span> Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. #example #tweet
-          </p>
-          <span class="timestamp">14h ago</span>
-        </article>
-      </section>
-    </main>
-    <footer>
-      <div class="footer-rows">
-        <h3>Contact</h3>
-        <ul>
-          <li>
-            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook" /></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram" /></a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com/"><img src="images/twitter.png" alt="Twitter" /></a>
-          </li>
-          <li>
-            <a href="https://www.tiktok.com/"><img src="images/tiktok.png" alt="TikTok" /></a>
-          </li>
-        </ul>
-        <div class="email-contact">
-          <p>Stay updated on everything MindWell</p>
-          <form action="">
-            <input type="email" name="email" id="email" placeholder="Your email here" />
-            <input type="submit" value="Subscribe" id="submit" />
-          </form>
-        </div>
-        <ul>
-          <li><a href="about.html">Privacy Policy</a></li>
-          <li><a href="about.html">Terms & Conditions</a></li>
-          <li><a href="about.html">Cookie Consent</a></li>
-          <li><a href="about.html">Accessibility</a></li>
-        </ul>
-      </div>
-      <p>©2023 MindWell, All Rights Reserved</p>
-    </footer>
-  </div>
-</body>
-
+        <p>©2023 MindWell, All Rights Reserved</p>
+      </footer>
+    </div>
+  </body>
 </html>
