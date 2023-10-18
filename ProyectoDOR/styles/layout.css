@@ -111,7 +111,7 @@ header {
   align-items: center;
   padding: 2vh 0;
   font-size: 1.5em;
-  border: 2px solid lightgray;
+  border-bottom: 1px solid lightgray;
   justify-content: space-around;
   /* position: fixed;
   width: 100%; */
