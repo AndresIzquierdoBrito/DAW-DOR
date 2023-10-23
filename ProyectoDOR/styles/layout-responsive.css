@@ -1,0 +1,64 @@
+/* Tablet size */
+
+@media screen and (min-width: 768px) {
+  .aside {
+    position: sticky;
+    width: 25%;
+    height: 100vh;
+    border-radius: 0;
+    box-shadow: 0 0 0 0;
+    z-index: auto;
+    border-right: 1px solid lightgray;
+  }
+
+  .user {
+    flex-direction: column;
+    margin: 1em 0 0 0;
+  }
+
+  .user-template {
+    margin-bottom: 1em;
+  }
+
+  .aside-item {
+    margin: 1em;
+  }
+
+  .hamburger-toggle {
+    display: none;
+  }
+
+  .catalog-guides .sale-icon {
+    width: 3.4em;
+    left: 85%;
+  }
+
+  header > a:last-child{
+    display: none;
+  }
+  nav{
+    display: inline;
+  }
+  
+  nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .article{
+    width: 48%;
+  }
+
+}
+
+/* Desktop size */
+@media screen and (min-width: 992px) {
+  h1 {
+    color: red;
+  }
+}

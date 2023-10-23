@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - MindWell</title>
     <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/layout-responsive.css" />
     <script src="./scripts/mainPage.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4071e215e7.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -14,24 +19,26 @@
         <span class="user-template"></span>
         <p>Usuario</p>
       </div>
-      <div class="aside-item">
+      <a href="#" class="aside-item">
         <h2>Meditate</h2>
         <div class="submenu-arrow"></div>
-      </div>
-      <div class="aside-item">
+      </a>
+      <a href="#" class="aside-item">
         <h2>Guides</h2>
         <div class="submenu-arrow"></div>
-      </div>
-      <div class="aside-item">
+      </a>
+      <a href="#" class="aside-item">
         <h2>Chat</h2>
         <div class="submenu-arrow"></div>
-      </div>
-      <div class="aside-item">
+      </a>
+      <a href="#" class="aside-item">
         <h2>Resources</h2>
         <div class="submenu-arrow"></div>
-      </div>
+      </a>
       <div class="upgrade-button"></div>
+      <!-- WIP -->
       <div class="settings"></div>
+      <!-- WIP -->
     </aside>
     <div class="content">
       <header>
@@ -50,7 +57,9 @@
         <a href="./main.html">
           <h1 id="page-title">MindWell</h1>
         </a>
-        <span class="user-template"></span>
+        <a href="./subpages/user-profile.html"
+          ><span class="user-template"></span
+        ></a>
       </header>
       <main>
         <h2>Welcome</h2>
@@ -135,9 +144,9 @@
             </div>
           </article>
           <article class="article">
+            <img src="./media/mindfularticle.jpg" alt="Article Image" />
             <div class="article-content">
               <h3 class="article-title">
-                <img src="./media/mindfularticle.webp" alt="Article Image" />
                 <span>Mindfulness </span>in Daily Life
               </h3>
               <p class="article-excerpt">
@@ -157,6 +166,20 @@
                 Learn strategies to cope with stress, navigate difficulties, and
                 emerge stronger. Discover how to bounce back from setbacks and
                 build confidence in the face of adversity.
+              </p>
+            </div>
+          </article>
+          <article class="article">
+            <img src="./media/positivity.jpg" alt="Article Image" />
+            <div class="article-content">
+              <h3 class="article-title">
+                <span>Embracing Optimism:</span> A Path to Mental Wellness
+              </h3>
+              <p class="article-excerpt">
+                Discover the transformative potential of positive thinking in
+                enhancing mental well-being. Learn practical strategies to
+                cultivate a positive mindset, reduce stress, and foster
+                resilience.
               </p>
             </div>
           </article>
@@ -213,49 +236,47 @@
         </section>
       </main>
       <footer>
-        <div class="footer-rows">
-          <h3>Contact</h3>
-          <ul>
-            <li>
-              <a href="https://www.facebook.com/"
-                ><img src="images/facebook.png" alt="Facebook"
-              /></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/"
-                ><img src="images/instagram.png" alt="Instagram"
-              /></a>
-            </li>
-            <li>
-              <a href="https://www.twitter.com/"
-                ><img src="images/twitter.png" alt="Twitter"
-              /></a>
-            </li>
-            <li>
-              <a href="https://www.tiktok.com/"
-                ><img src="images/tiktok.png" alt="TikTok"
-              /></a>
-            </li>
-          </ul>
-          <div class="email-contact">
-            <p>Stay updated on everything MindWell</p>
-            <form action="">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Your email here"
-              />
-              <input type="submit" value="Subscribe" id="submit" />
-            </form>
-          </div>
-          <ul>
-            <li><a href="about.html">Privacy Policy</a></li>
-            <li><a href="about.html">Terms & Conditions</a></li>
-            <li><a href="about.html">Cookie Consent</a></li>
-            <li><a href="about.html">Accessibility</a></li>
-          </ul>
+        <h3>Contact</h3>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/">
+              <i class="fa-brands fa-facebook"></i> Facebook
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/">
+              <i class="fa-brands fa-twitter"></i> Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/">
+              <i class="fa-brands fa-instagram"></i> Twitter
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/">
+              <i class="fa-brands fa-tiktok"></i> TikTok
+            </a>
+          </li>
+        </ul>
+        <div class="email-contact">
+          <p>Stay updated on everything MindWell</p>
+          <form action="">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email here"
+            />
+            <input type="submit" value="Subscribe" id="submit" />
+          </form>
         </div>
+        <ul class="footer-info-links">
+          <li><a href="about.html">Privacy Policy</a></li>
+          <li><a href="about.html">Terms & Conditions</a></li>
+          <li><a href="about.html">Cookie Consent</a></li>
+          <li><a href="about.html">Accessibility</a></li>
+        </ul>
         <p>©2023 MindWell, All Rights Reserved</p>
       </footer>
     </div>

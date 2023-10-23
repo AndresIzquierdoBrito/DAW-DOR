@@ -89,6 +89,18 @@ select {
   border: 1px solid lightgray;
   border-radius: 0.7em;
   font-size: 1.2em;
-  padding: 0.5em 0.3em;
+  padding: 0.5em 0.5em;
   margin-top: 0.5em;
+}
+
+input:required:valid {
+  background: url("../media/green-check.png") no-repeat 95% 50%;
+  background-size: 25px;
+}
+
+input:focus:invalid {
+  background: rgb(255, 204, 204);
+  background-size: 25px;
+  border-color: red;
+
 }
