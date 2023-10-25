@@ -6,6 +6,7 @@
     <title>Edit profile</title>
     <link rel="stylesheet" href="../styles/layout.css" />
     <link rel="stylesheet" href="../styles/user-profile-styles.css" />
+    <link rel="stylesheet" href="../styles/layout-responsive.css">
     <script src="../scripts/mainPage.js" defer></script>
     <script
       src="https://kit.fontawesome.com/4071e215e7.js"
@@ -13,8 +14,6 @@
     ></script>
   </head>
   <body>
-    
-
     <div class="content">
       <header>
         <div class="hamburger-toggle">
@@ -24,15 +23,15 @@
         </div>
         <nav>
           <ul>
-            <li><a href="./main.html">Home</a></li>
-            <li><a href="./main.html">About</a></li>
-            <li><a href="./main.html">Contact</a></li>
+            <li><a href="../main.html">Home</a></li>
+            <li><a href="../main.html">About</a></li>
+            <li><a href="../main.html">Contact</a></li>
           </ul>
         </nav>
-        <a href="./main.html">
+        <a href="../main.html">
           <h1 id="page-title">MindWell</h1>
         </a>
-        <a href="./subpages/user-profile.html"
+        <a  class="header-avatar-link" href="./subpages/user-profile.html"
           ><span class="user-template"></span
         ></a>
       </header>
@@ -43,7 +42,7 @@
           <img src="../media/change-picture.png" alt="change picture" />
         </div>
         <form action="#" method="post">
-          <div class="user-info">
+          <div class="profile-user-info">
             <div>
               <label class="label" for="name">Name</label>
               <input

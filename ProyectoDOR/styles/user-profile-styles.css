@@ -2,24 +2,23 @@ a {
   text-decoration: none;
 }
 
-.profile-info {
+
+.profile-user-info div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-top: 10px;
 }
 
 .profile-picture {
   position: relative;
 }
 
-.profile-info img:nth-child(1) {
+.profile-picture img:nth-child(1) {
   border-radius: 50%;
   margin-right: 10px;
   max-width: 50vw;
   max-height: 50vw;
 }
-.profile-info img:nth-child(2) {
+.profile-picture img:nth-child(2) {
   position: absolute;
   width: 12vw;
   height: 12vw;
@@ -27,12 +26,19 @@ a {
   bottom: 3vh;
 }
 
+.profile-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 main > div:first-child,
 main h2 {
   align-self: center;
 }
 
-.user-info {
+.profile-user-info {
   margin-left: 5%;
   margin-right: 5%;
   display: flex;
@@ -40,26 +46,28 @@ main h2 {
   justify-content: center;
 }
 
-.user-info div {
+.profile-user-info div {
   display: flex;
   flex-direction: column;
   margin-bottom: 1.7em;
   width: 100%;
 }
 
-.user-info .label {
+.profile-user-info .label {
   color: grey;
 }
 
-input[type="button"] {
+
+
+input[value="Edit profile"] {
   margin: 0 auto;
   display: block;
-  width: 50%;
+  width: 100%;
+  margin-top: 1.2em;
   border-radius: 20px;
   padding: 0.5em 1em;
   font-size: 1.3em;
   font-weight: 400;
-
   cursor: pointer;
   margin-bottom: 2em;
 }
@@ -67,16 +75,18 @@ input[type="button"] {
 input[value="Update profile"] {
   margin: 0 auto;
   display: block;
-  width: 50%;
+  width: 100%;
   background-color: #6b6b6b;
   border: 1px solid #6b6b6b;
   color: #fff;
   border-radius: 20px;
-  padding: 0.5em 1em;
+  padding: 0.5em 2.5em;
   font-size: 1.3em;
   font-weight: bold;
   cursor: pointer;
   margin-bottom: 2em;
+  align-self: center;
+
 }
 
 input[type="text"],
@@ -122,6 +132,16 @@ input:focus:invalid {
     width: 6vw;
     right: 4vw;
   }
+
+  .profile-info form {
+    width: 75vw;
+  }
+
+  .show-user-info{
+    margin-left: calc(50% - 30em) ;
+  }
+  
+  
 }
 
 /* Desktop size */
@@ -129,22 +149,44 @@ input:focus:invalid {
 @media screen and (min-width: 1200px) {
 
 
-  header a:last-child {
+  .header-avatar-link {
     visibility: hidden;
   }
+
+  .profile-info{
+    flex-direction: row;
+    margin-top: 3vh;
+    flex-wrap: wrap;
+  }
   
-  .user-info{
+  .profile-user-info{
+    width: 100%;
     font-size: 1em;
-    margin-left: calc(50% - 40vw);
   }
 
-  .profile-info img:nth-child(1) {
+
+  .profile-info form div{
+    width: 80%;
+  }
+
+  .profile-picture img:nth-child(1) {
     max-width: 20vw;
     max-height: 20vw;
   }
 
-  .profile-info img:nth-child(2) {
+  .profile-picture img:nth-child(2) {
     right: 1vw;
   }
+  .profile-info form + a {
+    margin-left: calc(50% - 8em);
+  }
+
+  .show-user-info{
+    margin-left: calc(50% - 15em) ;
+  }
   
+
+  input[value="Edit profile"] {
+    margin-left: 6vw;
+  }
 }

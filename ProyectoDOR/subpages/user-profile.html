@@ -6,6 +6,7 @@
     <title>Profile</title>
     <link rel="stylesheet" href="../styles/layout.css" />
     <link rel="stylesheet" href="../styles/user-profile-styles.css" />
+    <link rel="stylesheet" href="../styles/layout-responsive.css" />
     <script src="../scripts/mainPage.js"></script>
     <script
       src="https://kit.fontawesome.com/4071e215e7.js"
@@ -22,62 +23,64 @@
         </div>
         <nav>
           <ul>
-            <li><a href="./main.html">Home</a></li>
-            <li><a href="./main.html">About</a></li>
-            <li><a href="./main.html">Contact</a></li>
+            <li><a href="../main.html">Home</a></li>
+            <li><a href="../main.html">About</a></li>
+            <li><a href="../main.html">Contact</a></li>
           </ul>
         </nav>
-        <a href="./main.html">
+        <a href="../main.html">
           <h1 id="page-title">MindWell</h1>
         </a>
-        <a href="./subpages/user-profile.html"
+        <a class="header-avatar-link" href="./subpages/user-profile.html"
           ><span class="user-template"></span
         ></a>
       </header>
-
-      <main class="profile-info">
-        <div class="profile-picture">
-          <img src="../media/user-avatar.png" alt="your profile picture" />
-        </div>
-        <div class="user-info">
-          <div>
-            <span class="label">Name</span>
-            <span class="value">John</span>
-          </div>
-          <div>
-            <span class="label">Surname</span>
-            <span class="value">Doe</span>
-          </div>
-          <div>
-            <span class="label">Email</span>
-            <span class="value">johndoe@example.com</span>
-          </div>
-          <div>
-            <span class="label">Birthday</span>
-            <span class="value">April 5th, 2002</span>
-          </div>
-          <div>
-            <span class="label">Gender</span>
-            <span class="value">Male</span>
-          </div>
-          <div>
-            <span class="label">Phone Number</span>
-            <span class="value">600 123 456</span>
+      <div class="show-user-info">
+        <main class="profile-info">
+          <div class="profile-picture">
+            <img src="../media/user-avatar.png" alt="your profile picture" />
           </div>
 
-          <div>
-            <span class="label">Country</span>
-            <span class="value">Spain</span>
+          <div class="profile-user-info">
+            <div>
+              <span class="label">Name</span>
+              <span class="value">John</span>
+            </div>
+            <div>
+              <span class="label">Surname</span>
+              <span class="value">Doe</span>
+            </div>
+            <div>
+              <span class="label">Email</span>
+              <span class="value">johndoe@example.com</span>
+            </div>
+            <div>
+              <span class="label">Birthday</span>
+              <span class="value">April 5th, 2002</span>
+            </div>
+            <div>
+              <span class="label">Gender</span>
+              <span class="value">Male</span>
+            </div>
+            <div>
+              <span class="label">Phone Number</span>
+              <span class="value">600 123 456</span>
+            </div>
+
+            <div>
+              <span class="label">Country</span>
+              <span class="value">Spain</span>
+            </div>
+            <div>
+              <span class="label">Address</span>
+              <span class="value">Calle Falsa 123</span>
+            </div>
           </div>
-          <div>
-            <span class="label">Address</span>
-            <span class="value">Calle Falsa 123</span>
-          </div>
-        </div>
-        <a href="user-profile-edit.html">
-          <input type="button" value="Edit profile" />
-        </a>
-      </main>
+          <a href="user-profile-edit.html">
+            <input type="button" value="Edit profile" />
+          </a>
+        </main>
+      </div>
 
       <footer>
         <div class="footer-rows">

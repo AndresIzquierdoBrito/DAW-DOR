@@ -115,7 +115,7 @@
     gap: 2em;
   }
 
-  .user-info img {
+  .profile-user-info img, .user-info img {
     max-height: 12vw;
     height: 12vw;
   }
@@ -159,12 +159,20 @@
 
   .catalog-guides .sale-icon {
     width: 3vw;
-    left: 90%;
+    left: 88%;
     top: 87%;
   }
 
   .carousel {
     max-height: 80vh;
+  }
+
+  .carousel-container{
+    height: 80vh;
+  }
+
+  .carousel-item img {
+    object-fit: cover;
   }
 
   .latest-posts {
@@ -178,5 +186,9 @@
 
   main h2:nth-child(n + 9) {
     text-align: center;
+  }
+
+  .email-contact input[type="email"] {
+    width: 40%;
   }
 }
