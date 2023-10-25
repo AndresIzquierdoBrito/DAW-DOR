@@ -104,3 +104,47 @@ input:focus:invalid {
   border-color: red;
 
 }
+
+/* Tablet size */
+
+@media screen and (min-width: 768px) {
+
+  header{
+    height: 10vh;
+  }
+  
+  .profile-info img:nth-child(1) {
+    max-width: 12em;
+    max-height: 12em;
+  }
+  .profile-info img:nth-child(2) {
+    height: 6vw;
+    width: 6vw;
+    right: 4vw;
+  }
+}
+
+/* Desktop size */
+
+@media screen and (min-width: 1200px) {
+
+
+  header a:last-child {
+    visibility: hidden;
+  }
+  
+  .user-info{
+    font-size: 1em;
+    margin-left: calc(50% - 40vw);
+  }
+
+  .profile-info img:nth-child(1) {
+    max-width: 20vw;
+    max-height: 20vw;
+  }
+
+  .profile-info img:nth-child(2) {
+    right: 1vw;
+  }
+  
+}
