@@ -26,9 +26,7 @@ body {
   z-index: 10;
   top: 0;
   left: 0;
-  overflow-y: auto;
-  /* position: sticky;
-  top: 0; */
+  overflow: hidden;
   box-shadow: 0px 4.7px 9.8px rgba(0, 0, 0, 0.058),
     0px 12px 22.2px rgba(0, 0, 0, 0.084), 0px 22.5px 38.7px rgba(0, 0, 0, 0.103),
     0px 36.8px 61.5px rgba(0, 0, 0, 0.12), 0px 56px 94.9px rgba(0, 0, 0, 0.137),
@@ -44,15 +42,18 @@ body {
 
 .user {
   margin: 1em;
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  align-self: center;
 }
 
 .user p {
   font-size: 1.5em;
   font-weight: bold;
+  overflow-wrap: break-word;
+  text-align: center;
 }
 .user-template {
   height: 15vw;
@@ -62,7 +63,7 @@ body {
   display: inline-block;
 }
 
-.aside-item{
+.aside-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -81,8 +82,29 @@ body {
   border-bottom: 5px solid transparent;
   border-left: 8px solid #333;
   position: absolute;
-  right: 10px; 
-  transform: rotate(90deg); 
+  right: 10px;
+  transform: rotate(90deg);
+}
+
+.upgrade-button {
+  text-align: center;
+  background-color: #646464;
+  color: white;
+  padding: 1em;
+  font-size: 1.2em;
+  border-radius: 12px;
+  font-weight: bold;
+  margin: 1.5em;
+  text-decoration: none;
+}
+
+.upgrade-button:hover {
+  background-color: #464646;
+}
+
+.aside > a:last-of-type {
+  margin-top: calc(100% - 10.5em);
+  text-decoration: none;
 }
 
 .content {
@@ -135,7 +157,7 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 6vw  ;
+  gap: 6vw;
   margin-left: 1.5em;
 }
 
@@ -146,11 +168,10 @@ header h1 {
 
 main {
   padding: 0 1em;
-
 }
 
 main h2 {
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 
 .box-template {
@@ -184,16 +205,80 @@ main h2 {
   width: 100%;
   flex: 1;
   font-size: 1.1em;
-  margin-bottom: .6em;
+  margin-bottom: 0.6em;
   border-radius: 10px;
   border: none;
   background-color: #7d7d7d;
   color: white;
-  padding: .3em 1em;
+  padding: 0.3em 1em;
 }
 
 .user-buttons button:last-child {
   margin-right: 0;
+}
+
+.user-info h2 {
+  text-align: center;
+  width: 12%;
+  font-size: 1.3vw;
+}
+
+.next-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.next-steps > a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+.next-steps > a > div {
+  border-radius: 1em;
+  font-size: 0.8vw;
+  background-color: #fff;
+  padding: 1em;
+}
+
+.user-progress {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 25%;
+  gap: 1em;
+}
+
+.progress-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.progress-bar h3 {
+  font-size: 1vw;
+}
+
+.progress {
+  width: 100%;
+  height: 1rem;
+  border: 1px solid rgba(150, 150, 150, 0.2);
+  background-color: #fcfcfc;
+  border-radius: 0.5rem;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #969696;
+  border-radius: 0.5rem;
+}
+
+.user-progress,
+.user-info h2,
+.next-steps {
+  display: none;
 }
 
 .catalog-guides {
@@ -202,29 +287,50 @@ main h2 {
   flex-wrap: wrap;
 }
 
-
 .catalog-guides div {
   flex-basis: 48%;
   background-size: cover !important;
   background-position: center !important ;
 }
 
-
-.catalog-guides div:nth-child(1){
-  background: linear-gradient(180deg, rgba(2, 0, 36, 0) 0%, rgba(246, 246, 246, 0) 45%, rgba(246, 246, 246, 1) 90%), url(../media/stress.jpg);
+.catalog-guides div:nth-child(1) {
+  background: linear-gradient(
+      180deg,
+      rgba(2, 0, 36, 0) 0%,
+      rgba(246, 246, 246, 0) 45%,
+      rgba(246, 246, 246, 1) 90%
+    ),
+    url(../media/stress.jpg);
 }
 
-.catalog-guides div:nth-child(2){
-  background: linear-gradient(180deg, rgba(2, 0, 36, 0) 0%, rgba(246, 246, 246, 0) 45%, rgba(246, 246, 246, 1) 90%), url(../media/sleep.jpg);
+.catalog-guides div:nth-child(2) {
+  background: linear-gradient(
+      180deg,
+      rgba(2, 0, 36, 0) 0%,
+      rgba(246, 246, 246, 0) 45%,
+      rgba(246, 246, 246, 1) 90%
+    ),
+    url(../media/sleep.jpg);
 }
 
-.catalog-guides div:nth-child(3){
-  background: linear-gradient(180deg, rgba(2, 0, 36, 0) 0%, rgba(246, 246, 246, 0) 45%, rgba(246, 246, 246, 1) 90%), url(../media/mindfulness.jpg);
+.catalog-guides div:nth-child(3) {
+  background: linear-gradient(
+      180deg,
+      rgba(2, 0, 36, 0) 0%,
+      rgba(246, 246, 246, 0) 45%,
+      rgba(246, 246, 246, 1) 90%
+    ),
+    url(../media/mindfulness.jpg);
 }
 
-.catalog-guides div:nth-child(4){
-  background: linear-gradient(180deg, rgba(2, 0, 36, 0) 0%, rgba(246, 246, 246, 0) 45%, rgba(246, 246, 246, 1) 90%), url(../media/relationships.jpg);
-
+.catalog-guides div:nth-child(4) {
+  background: linear-gradient(
+      180deg,
+      rgba(2, 0, 36, 0) 0%,
+      rgba(246, 246, 246, 0) 45%,
+      rgba(246, 246, 246, 1) 90%
+    ),
+    url(../media/relationships.jpg);
 }
 
 .catalog-items {
@@ -240,18 +346,18 @@ main h2 {
   color: #333;
 }
 
-.catalog-items .price{
+.catalog-items .price {
   position: absolute;
   background-color: #b4b4b4;
   right: 0;
   margin: 0;
-  padding: .5em .5em;
+  padding: 0.5em 0.5em;
   font-size: 1.4rem;
   border-radius: 0px 20px 0px 20px;
   color: #333;
 }
 
-.catalog-items .price-sale { 
+.catalog-items .price-sale {
   background-color: rgb(255, 118, 118);
   font-weight: bold;
 }
@@ -265,20 +371,24 @@ main h2 {
   left: 80%;
 }
 
+.catalog-guides > *:nth-child(2n) {
+  display: none;
+}
+
 .button-container {
-  text-align: center; 
+  text-align: center;
   margin: 1em 0;
 }
 
-.unlock-all-button {  
+.unlock-all-button {
   display: inline-block;
   outline: none;
   cursor: pointer;
   font-size: 14px;
   line-height: 1;
   border-radius: 500px;
-  transition-property: background-color,border-color,color,box-shadow,filter;
-  transition-duration: .3s;
+  transition-property: background-color, border-color, color, box-shadow, filter;
+  transition-duration: 0.3s;
   border: 1px solid transparent;
   letter-spacing: 2px;
   min-width: 160px;
@@ -297,7 +407,6 @@ main h2 {
   border-color: #464646;
   color: #fff;
 }
-
 
 .carousel {
   position: relative;
@@ -339,7 +448,6 @@ main h2 {
   font-size: 2rem;
   color: white;
   cursor: pointer;
-  
 }
 
 .carousel-dot {
@@ -402,13 +510,13 @@ main h2 {
 
 .social-posts {
   width: 100%;
-  max-width: 400px; 
+  max-width: 400px;
   margin: 0 auto;
 }
 
 .post {
-  background-color: #f5f8fa; 
-  border: 1px solid #e1e8ed; 
+  background-color: #f5f8fa;
+  border: 1px solid #e1e8ed;
   border-radius: 10px;
   padding: 15px;
   margin-bottom: 20px;
@@ -416,8 +524,8 @@ main h2 {
 
 .twitter-user-info {
   display: flex;
-  align-items: flex-start; 
-  justify-content: space-between; 
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .twitter-user-info img.twitter-logo {
@@ -426,7 +534,7 @@ main h2 {
 }
 
 .post img {
-  border-radius: 50%; 
+  border-radius: 50%;
   margin-right: 10px;
   max-width: 50px;
   max-height: 50px;
@@ -434,19 +542,19 @@ main h2 {
 
 .post p {
   font-size: 14px;
-  color: #1b2836; 
+  color: #1b2836;
   line-height: 1.4;
   margin: 10px 0;
 }
 
 .post .username {
   font-weight: bold;
-  color: #1da1f2; 
+  color: #1da1f2;
 }
 
 .post .timestamp {
   font-size: 12px;
-  color: #657786; 
+  color: #657786;
 }
 
 footer {
@@ -458,21 +566,21 @@ footer {
   display: block;
 }
 
-footer a{
+footer a {
   color: white;
   text-decoration: none;
 }
 
-footer p:last-child{
-  color:rgb(190, 190, 190);
+footer p:last-child {
+  color: rgb(190, 190, 190);
 }
 
-footer ul{
+footer ul {
   display: flex;
   justify-content: center;
   gap: 1vw;
   flex-wrap: wrap;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   color: red;
   list-style: none;
 }
@@ -486,35 +594,34 @@ footer ul li {
   margin-right: 1vh;
 }
 .email-contact {
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 
 .email-contact p {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 .email-contact form {
-
   display: flex;
-  gap: .5em;
+  gap: 0.5em;
   justify-content: center;
 }
 
 .email-contact input[type="email"] {
   margin: 0;
   font-size: 1em;
-  border-radius: .5em;
+  border-radius: 0.5em;
   border: 1px solid grey;
-  padding: .2em .4em;
+  padding: 0.2em 0.4em;
 }
 
 .email-contact input[type="submit"] {
   border-radius: 1em;
   border: 1px solid grey;
   font-weight: bold;
-  padding: 0 .4em;
+  padding: 0 0.4em;
 }
 
-.footer-info-links{
+.footer-info-links {
   text-decoration: underline;
   color: rgb(183, 183, 183);
 }
