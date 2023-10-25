@@ -169,10 +169,12 @@
 
   .carousel-container{
     height: 80vh;
+    width: 100%;
   }
 
   .carousel-item img {
     object-fit: cover;
+    width: 100%;
   }
 
   .latest-posts {
