@@ -10,13 +10,12 @@
 body {
   min-height: 100vh;
   display: flex;
-  background-color: #F1F9F9;
+  background-color: #1C3341;
+  color: #fff;
 }
 
 .aside {
-  background: linear-gradient(180deg, rgba(200,232,232,1) 0%, rgba(241,249,249,1) 20%, rgba(241,249,249,0) 30%);
-   /* background: linear-gradient(180deg, rgba(200,232,232,1) 50%, rgba(241,249,249,1) 100%); */
-
+  background: linear-gradient(180deg, rgba(0,11,27,1) 0%, rgba(0,11,27,1) 5%, rgba(241,249,249,0) 30%);
   border-radius: 0px 0px 150px 150px / 0px 0px 45px 45px;
   display: flex;
   flex-direction: column;
@@ -72,10 +71,10 @@ body {
   justify-content: space-between;
   padding: 10px;
   margin: 2em;
-  border-bottom: 1px solid #006E90; /* Optional: Add a border at the bottom of the item */
+  border-bottom: 1px solid #6299BC; /* Optional: Add a border at the bottom of the item */
   position: relative;
   text-decoration: none;
-  color: black;
+  color: #fff;
 }
 
 .submenu-arrow {
@@ -83,7 +82,7 @@ body {
   height: 0;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-left: 8px solid #006E90;
+  border-left: 8px solid #6299BC;
   position: absolute;
   right: 10px;
   transform: rotate(90deg);
@@ -103,7 +102,7 @@ body {
 }
 
 .upgrade-button:hover {
-  background-color: #004257;
+  background-color: #6299BC;
 }
 
 .aside > a:last-of-type {
@@ -135,7 +134,7 @@ body {
 
 header {
   color: #fff;
-  background: linear-gradient(180deg, rgba(200,232,232,1) 50%, rgba(241,249,249,1) 100%);
+  background: linear-gradient(180deg, rgba(0,11,27,1) 0%, rgba(0,11,27,0.4598214285714286) 54%, rgba(241,249,249,0) 100%);
   display: flex;
   align-items: center;
   padding: 2vh 0;
@@ -146,7 +145,7 @@ header {
 header a {
   font-weight: bold;
   text-decoration: none;
-  color: #004257;
+  color: #D4E3ED;
   font-size: 1.3em;
 }
 
@@ -162,7 +161,7 @@ nav ul {
 }
 
 header h1 {
-  color: #004257;
+  color: #B8D1E0;
   font-size: 1.75em;
   font-weight: bolder;
 }
@@ -176,7 +175,7 @@ main h2 {
 }
 
 .box-template {
-  background-color: #C8E8E8;
+  background-color: #000B1B;
   border-radius: 20px 20px 20px 20px;
   margin: 0.5em 0em;
   min-height: 20vh;
@@ -233,13 +232,13 @@ main h2 {
 
 .next-steps > a {
   text-decoration: none;
-  color: black;
+  color: #fff;
   width: 100%;
 }
 .next-steps > a > div {
   border-radius: 1em;
   font-size: 0.8vw;
-  background-color: #fff;
+  background-color: #1F3847;
   padding: 1em;
 }
 
@@ -271,7 +270,7 @@ main h2 {
 
 .progress-bar-fill {
   height: 100%;
-  background-color: #006E90;
+  background-color: #6299BC;
   border-radius: 0.5rem;
 }
 
@@ -298,7 +297,7 @@ main h2 {
       180deg,
       rgba(2, 0, 36, 0) 0%,
       rgba(246, 246, 246, 0) 45%,
-      rgba(212, 237, 237, 1) 90%
+      rgba(23, 32, 42, 1) 90%
     ),
     url(../media/stress.jpg);
 }
@@ -308,7 +307,7 @@ main h2 {
       180deg,
       rgba(2, 0, 36, 0) 0%,
       rgba(246, 246, 246, 0) 45%,
-      rgba(212, 237, 237, 1) 90%
+      rgba(23, 32, 42, 1) 90%
     ),
     url(../media/sleep.jpg);
 }
@@ -318,7 +317,7 @@ main h2 {
       180deg,
       rgba(2, 0, 36, 0) 0%,
       rgba(246, 246, 246, 0) 45%,
-      rgba(212, 237, 237, 1) 90%
+      rgba(23, 32, 42, 1) 90%
     ),
     url(../media/mindfulness.jpg);
 }
@@ -328,7 +327,7 @@ main h2 {
       180deg,
       rgba(2, 0, 36, 0) 0%,
       rgba(246, 246, 246, 0) 45%,
-      rgba(212, 237, 237, 1) 90%
+      rgba(23, 32, 42, 1) 90%
     ),
     url(../media/relationships.jpg);
 }
@@ -338,7 +337,7 @@ main h2 {
       180deg,
       rgba(2, 0, 36, 0) 0%,
       rgba(246, 246, 246, 0) 45%,
-      rgba(212, 237, 237, 1) 90%
+      rgba(23, 32, 42, 1) 90%
     ),
     url(../media/1.jpg);
 }
@@ -348,7 +347,7 @@ main h2 {
       180deg,
       rgba(2, 0, 36, 0) 0%,
       rgba(246, 246, 246, 0) 45%,
-      rgba(212, 237, 237, 1) 90%
+      rgba(23, 32, 42, 1) 90%
     ),
     url(../media/2.jpg);
 }
@@ -358,7 +357,7 @@ main h2 {
       180deg,
       rgba(2, 0, 36, 0) 0%,
       rgba(246, 246, 246, 0) 45%,
-      rgba(212, 237, 237, 1) 90%
+      rgba(23, 32, 42, 1) 90%
     ),
     url(../media/3.jpg);
 }
@@ -368,7 +367,7 @@ main h2 {
       180deg,
       rgba(2, 0, 36, 0) 0%,
       rgba(246, 246, 246, 0) 45%,
-      rgba(212, 237, 237, 1) 90%
+      rgba(23, 32, 42, 1) 90%
     ),
     url(../media/4.jpg);
 }
@@ -384,18 +383,18 @@ main h2 {
   left: 10%;
   margin: 0;
   font-size: 1.2rem;
-  color: #333;
+  color: #fff;
 }
 
 .catalog-items .price {
   position: absolute;
-  background-color: #B8E0E0;
+  background-color: #17202A;
   right: 0;
   margin: 0;
   padding: 0.5em 0.5em;
   font-size: 1.4rem;
   border-radius: 0px 20px 0px 20px;
-  color: #333;
+  color: #fff;
 }
 
 .catalog-items .price-sale {
@@ -444,8 +443,8 @@ main h2 {
 }
 
 .unlock-all-button:hover {
-  background-color: #004257;
-  border-color: #004257;
+  background-color: #6299BC;
+  border-color: #6299BC;
   color: #fff;
 }
 
@@ -517,7 +516,8 @@ main h2 {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-  background-color: #C6E6E6;
+  background-color: #000B1B;
+  color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -542,7 +542,7 @@ main h2 {
 
 .article-title span {
   font-weight: bold;
-  color: #004257;
+  color: #72a2b1;
 }
 
 .article-excerpt {
@@ -554,11 +554,12 @@ main h2 {
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
+
 }
 
 .post {
-  background-color: #f5f8fa;
-  border: 1px solid #e1e8ed;
+  background-color: #17202A;
+  border: 1px solid #22303f;
   border-radius: 10px;
   padding: 15px;
   margin-bottom: 20px;
@@ -584,7 +585,7 @@ main h2 {
 
 .post p {
   font-size: 14px;
-  color: #1b2836;
+  color: #fff;
   line-height: 1.4;
   margin: 10px 0;
 }
