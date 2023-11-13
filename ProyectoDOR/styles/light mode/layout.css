@@ -14,9 +14,8 @@ body {
 }
 
 .aside {
-  background: linear-gradient(180deg, rgba(200,232,232,1) 0%, rgba(241,249,249,1) 50%, rgba(241,249,249,0) 30%);
-   /* background: linear-gradient(180deg, rgba(200,232,232,1) 50%, rgba(241,249,249,1) 100%); */
-
+  background: rgb(200,232,232);
+  background: linear-gradient(149deg, rgba(200,232,232,1) 19%, rgba(220,240,240,0.28895308123249297) 33%, rgba(241,249,249,0) 100%);
   border-radius: 0px 0px 150px 150px / 0px 0px 45px 45px;
   display: flex;
   flex-direction: column;
@@ -139,7 +138,7 @@ header {
   display: flex;
   align-items: center;
   padding: 2vh 0;
-  font-size: 1.5em;
+  font-size: 1em;
   justify-content: space-around;
 }
 
