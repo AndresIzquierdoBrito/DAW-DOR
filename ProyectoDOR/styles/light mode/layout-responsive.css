@@ -2,6 +2,7 @@
 
 @media screen and (min-width: 768px) {
   .aside {
+    background: linear-gradient(149deg, rgba(200,232,232,1) 19%, rgba(220,240,240,0.28895308123249297) 33%, rgba(241,249,249,0) 100%);
     position: sticky;
     width: 25%;
     height: 100vh;
@@ -19,6 +20,11 @@
   .user {
     flex-direction: column;
     margin: 1vw 0 1vw 0;
+  }
+
+  .aside{
+    background: linear-gradient(149deg, rgba(200,232,232,1) 19%, rgba(220,240,240,0.28895308123249297) 33%, rgba(241,249,249,0) 100%);
+
   }
 
   header > a:last-child {

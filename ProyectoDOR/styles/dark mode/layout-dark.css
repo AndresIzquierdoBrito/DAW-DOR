@@ -15,7 +15,7 @@ body {
 }
 
 .aside {
-  background: linear-gradient(180deg, rgba(0,11,27,1) 0%, rgba(0,11,27,1) 5%, rgba(28,19,65,0) 30%);
+  background: linear-gradient(180deg, rgba(0,11,27,1) 50%, rgba(28,51,65,1) 100%);
   border-radius: 0px 0px 150px 150px / 0px 0px 45px 45px;
   display: flex;
   flex-direction: column;
@@ -74,7 +74,9 @@ body {
   border-bottom: 1px solid #6299BC; /* Optional: Add a border at the bottom of the item */
   position: relative;
   text-decoration: none;
+  color: black;
   color: #fff;
+
 }
 
 .submenu-arrow {
@@ -138,7 +140,7 @@ header {
   display: flex;
   align-items: center;
   padding: 2vh 0;
-  font-size: 1.5em;
+  font-size: 1em;
   justify-content: space-around;
 }
 
@@ -294,82 +296,82 @@ main h2 {
 
 .catalog-guides div:nth-child(1) {
   background: linear-gradient(
-      180deg,
-      rgba(2, 0, 36, 0) 0%,
-      rgba(246, 246, 246, 0) 45%,
-      rgba(23, 32, 42, 1) 90%
+    180deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(246, 246, 246, 0) 45%,
+    rgba(23, 32, 42, 1) 90%
     ),
-    url(../../media/stress.jpg);
+    url(../../../media/stress.jpg);
 }
 
 .catalog-guides div:nth-child(2) {
   background: linear-gradient(
-      180deg,
-      rgba(2, 0, 36, 0) 0%,
-      rgba(246, 246, 246, 0) 45%,
-      rgba(23, 32, 42, 1) 90%
+    180deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(246, 246, 246, 0) 45%,
+    rgba(23, 32, 42, 1) 90%
     ),
-    url(../../media/sleep.jpg);
+    url(../../../media/sleep.jpg);
 }
 
 .catalog-guides div:nth-child(3) {
   background: linear-gradient(
-      180deg,
-      rgba(2, 0, 36, 0) 0%,
-      rgba(246, 246, 246, 0) 45%,
-      rgba(23, 32, 42, 1) 90%
+    180deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(246, 246, 246, 0) 45%,
+    rgba(23, 32, 42, 1) 90%
     ),
-    url(../../media/mindfulness.jpg);
+    url(../../../media/mindfulness.jpg);
 }
 
 .catalog-guides div:nth-child(4) {
   background: linear-gradient(
-      180deg,
-      rgba(2, 0, 36, 0) 0%,
-      rgba(246, 246, 246, 0) 45%,
-      rgba(23, 32, 42, 1) 90%
+    180deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(246, 246, 246, 0) 45%,
+    rgba(23, 32, 42, 1) 90%
     ),
-    url(../../media/relationships.jpg);
+    url(../../../media/relationships.jpg);
 }
 
 .catalog-guides div:nth-child(5) {
   background: linear-gradient(
-      180deg,
-      rgba(2, 0, 36, 0) 0%,
-      rgba(246, 246, 246, 0) 45%,
-      rgba(23, 32, 42, 1) 90%
+    180deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(246, 246, 246, 0) 45%,
+    rgba(23, 32, 42, 1) 90%
     ),
-    url(../../media/1.jpg);
+    url(../../../media/1.jpg);
 }
 
 .catalog-guides div:nth-child(6) {
   background: linear-gradient(
-      180deg,
-      rgba(2, 0, 36, 0) 0%,
-      rgba(246, 246, 246, 0) 45%,
-      rgba(23, 32, 42, 1) 90%
+    180deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(246, 246, 246, 0) 45%,
+    rgba(23, 32, 42, 1) 90%
     ),
-    url(../../media/2.jpg);
+    url(../../../media/2.jpg);
 }
 
 .catalog-guides div:nth-child(7) {
   background: linear-gradient(
-      180deg,
-      rgba(2, 0, 36, 0) 0%,
-      rgba(246, 246, 246, 0) 45%,
-      rgba(23, 32, 42, 1) 90%
+    180deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(246, 246, 246, 0) 45%,
+    rgba(23, 32, 42, 1) 90%
     ),
-    url(../../media/3.jpg);
+    url(../../../media/3.jpg);
 }
 
 .catalog-guides div:nth-child(8) {
   background: linear-gradient(
-      180deg,
-      rgba(2, 0, 36, 0) 0%,
-      rgba(246, 246, 246, 0) 45%,
-      rgba(23, 32, 42, 1) 90%
+    180deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(246, 246, 246, 0) 45%,
+    rgba(23, 32, 42, 1) 90%
     ),
-    url(../../media/4.jpg);
+    url(../../../media/4.jpg);
 }
 
 
@@ -542,7 +544,7 @@ main h2 {
 
 .article-title span {
   font-weight: bold;
-  color: #72a2b1;
+  color: #004257;
 }
 
 .article-excerpt {
@@ -554,7 +556,6 @@ main h2 {
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
-
 }
 
 .post {
@@ -602,11 +603,11 @@ main h2 {
 
 footer {
   color: #fff;
-  background: #004E66;
+  background: #006E90;
   text-align: center;
   padding: 20px;
   display: block;
-  display: block;
+  margin-top: 3em;
 }
 
 footer a {
@@ -667,4 +668,10 @@ footer ul li {
 .footer-info-links {
   text-decoration: underline;
   color: #D4EDED;
+}
+
+
+/* temporal */
+.label{
+  color: rgb(194, 194, 194) !important;
 }

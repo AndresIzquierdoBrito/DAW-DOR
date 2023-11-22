@@ -7,11 +7,11 @@
 
     <link rel="stylesheet" href="../styles/light mode/layout.css" />
     <link rel="stylesheet" href="../styles/light mode/layout-responsive.css" />
+    <link rel="stylesheet" href="../styles/light mode/product.css" />
 
     <!-- <link rel="stylesheet" href="../styles/dark mode/layout-dark.css" />
-  <link rel="stylesheet" href="../styles/dark mode/layout-responsive-dark.css">> -->
-
-    <link rel="stylesheet" href="../styles/light mode/product.css" />
+    <link rel="stylesheet" href="../styles/dark mode/layout-responsive-dark.css">
+    <link rel="stylesheet" href="../styles/dark mode/product-dark.css" /> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,10 +19,35 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/4071e215e7.js" crossorigin="anonymous"></script>
 
     <script src="../scripts/mainPage.js"></script>
   </head>
   <body>
+    <aside class="aside">
+      <div class="user">
+        <a href="./subpages/user-profile.html"
+          ><span class="user-template"></span
+        ></a>
+        <p>Usuario</p>
+      </div>
+      <a href="../main.html" class="aside-item">
+        <h2>Home</h2>
+      </a>
+      <a href="../main.html" class="aside-item">
+        <h2>Catalog</h2>
+      </a>
+      <a href="../main.html" class="aside-item">
+        <h2>About</h2>
+      </a>
+      <a href="../main.html" class="aside-item">
+        <h2>Contact</h2>
+      </a>
+      <a href="#"><div class="upgrade-button">Upgrade</div></a>
+      <!-- WIP -->
+      <div class="settings"></div>
+      <!-- WIP -->
+    </aside>
     <div class="content">
       <header>
         <div class="hamburger-toggle">
@@ -44,7 +69,11 @@
           ><span class="user-template"></span
         ></a>
       </header>
-      <button>Cart</button>
+      
+      <button class="cart-btn">
+        <img src="../media/cart.png" alt="cart image" />
+      </button>
+
       <main>
         <section class="product-zone">
           <div class="product-media">
@@ -57,52 +86,64 @@
               <img src="../media/sleep.jpg" alt="Product" />
             </div>
           </div>
-          <div class="product-info">
-            <h2>Sleep</h2>
-            <h2>2.99&euro;</h>
-            <h3>Improve your sleep with this curated experience.</h3>
-            <section id="rating">
-              <div class="rating">
-                <span class="active">&#9733;</span>
-                <span class="active">&#9733;</span>
-                <span class="active">&#9733;</span>
-                <span class="active">&#9733;</span>
-                <span>&#9733;</span>
+
+          <div class="product-right">
+            <div class="product-info">
+              <h1>Sleep</h1>
+              <h3>Improve your sleep with this curated experience.</h3>
+              <section id="rating">
+                <div class="rating">
+                  <span class="active">&#9733;</span>
+                  <span class="active">&#9733;</span>
+                  <span class="active">&#9733;</span>
+                  <span class="active">&#9733;</span>
+                  <span>&#9733;</span>
+                </div>
                 <p>25 reviews</p>
-              </div>
-            </section>
-            <p>
-              Sleep, your gateway to a restful and rejuvenating night's sleep.
-              Our guided sleep experience is meticulously designed to help you
-              unwind, relax, and achieve a deep and peaceful sleep. Say goodbye
-              to restless nights and embrace a healthier sleep routine with this
-              experience.
-            </p>
-            <ul>
-              <li>Guided Sleep Sessions</li>
-              <li>Personalized Sleep Plans</li>
-              <li>Nature Sounds and Ambient Music</li>
-              <li>Sleep Resources</li>
-              <li>Progress Tracking</li>
-              <li>Offline Access</li>
-              <li>Community Support</li>
-            </ul>
+              </section>
+              <p>
+                Sleep, your gateway to a restful and rejuvenating night's sleep.
+                Our guided sleep experience is meticulously designed to help you
+                unwind, relax, and achieve a deep and peaceful sleep. Say
+                goodbye to restless nights and embrace a healthier sleep routine
+                with this experience.
+              </p>
+              <ul style="list-style-type: '&#128309; '">
+                <li>Guided Sleep Sessions</li>
+                <li>Personalized Sleep Plans</li>
+                <li>Nature Sounds and Ambient Music</li>
+                <li>Sleep Resources</li>
+                <li>Progress Tracking</li>
+                <li>Offline Access</li>
+                <li>Community Support</li>
+              </ul>
+            </div>
 
             <div class="purchase-data">
-              <input type="number" name="amountProduct" id="amountProduct" value="1"/>
-              <button>Add to cart</button>
+              <h2>2.99&euro;</h2>
+              <p>Cantidad:</p>
+              <input
+                type="number"
+                name="amountProduct"
+                id="amountProduct"
+                value="1"
+              />
+              <div class="add-cart">
+                <button>Add to cart</button>
+                <img src="../media/heart.png" alt="" />
+              </div>
               <button>Buy</button>
               <p><em>Local taxes may apply in checkout.</em></p>
             </div>
           </div>
         </section>
-        <h3>Content</h3>
 
+        <h2>Content</h2>
         <section id="sleep-package">
-          <table>
+          <table class="content-table">
             <thead>
-              <tr>
-                <th>Chapter</th>
+              <tr class="">
+                <th class="">Chapter</th>
                 <th>Content</th>
                 <th>Duration</th>
               </tr>
@@ -145,14 +186,20 @@
               </tr>
               <!-- Add more rows as needed -->
             </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2">Total time:</td>
+                <td> 70 minutes</td>
+              </tr>
+            </tfoot>
           </table>
         </section>
 
-        <h3>Reviews</h3>
+        <h2>Reviews</h2>
         <section class="reviews">
           <div class="review">
             <div class="review-user">
-              <img src="../images/person1.jpg" alt="Person 1" />
+              <img src="../media/avatar.png" alt="Person 1" />
               <p><strong>Lisa M.</strong></p>
             </div>
             <div class="review-body">
@@ -162,49 +209,59 @@
                 <div class="star active">&#9733;</div>
                 <div class="star active">&#9733;</div>
                 <div class="star">&#9733;</div>
-            </div>
-            <p>
-                "MindWell
-                Sleep has been a game-changer for me! The guided sessions are
-                incredibly calming, and I love that I can customize my
-                experience..."
-            </p>
+              </div>
+              <p>
+                "MindWell Sleep has been a game-changer for me! The guided
+                sessions are incredibly calming, and I love that I can customize
+                my experience..."
+              </p>
             </div>
           </div>
           <div class="review">
+            <div class="review-user">
+              <img src="../media/avatar.png" alt="Person 1" />
+              <p><strong>Jason B.</strong></p>
+            </div>
+            <div class="review-body">
               <div class="review-rating">
-                  <div class="star active">&#9733;</div>
-                  <div class="star active">&#9733;</div>
-                  <div class="star active">&#9733;</div>
-                  <div class="star active">&#9733;</div>
-                  <div class="star">&#9733;</div>
+                <div class="star active">&#9733;</div>
+                <div class="star active">&#9733;</div>
+                <div class="star active">&#9733;</div>
+                <div class="star active">&#9733;</div>
+                <div class="star">&#9733;</div>
               </div>
-              <img src="person2.jpg" alt="Person 2">
               <p>
-                  <strong>Jason B.</strong> "As someone
-                  who's struggled with insomnia for years, MindWell Sleep has been a
-                  lifesaver. The personalized plans and diverse range of sessions
-                  keep things interesting..."
+                "Being part
+              of the MindWell Sleep community has made my sleep journey feel
+              less lonely. Sharing tips and experiences with others has added a
+              social aspect to improving my sleep..."
               </p>
+            </div>
           </div>
           <div class="review">
+            <div class="review-user">
+              <img src="../media/avatar.png" alt="Person 1" />
+              <p><strong>Emily S.</strong></p>
+            </div>
+            <div class="review-body">
               <div class="review-rating">
-                  <div class="star active">&#9733;</div>
-                  <div class="star active">&#9733;</div>
-                  <div class="star active">&#9733;</div>
-                  <div class="star active">&#9733;</div>
-                  <div class="star active">&#9733;</div>
+                <div class="star active">&#9733;</div>
+                <div class="star active">&#9733;</div>
+                <div class="star active">&#9733;</div>
+                <div class="star active">&#9733;</div>
+                <div class="star">&#9733;</div>
               </div>
-              <img src="person3.jpg" alt="Person 3">
               <p>
-                  <strong>Emily S., MindWell Community Member:</strong> "Being part
-                  of the MindWell Sleep community has made my sleep journey feel
-                  less lonely. Sharing tips and experiences with others has added a
-                  social aspect to improving my sleep..."
+                "As someone who's struggled with
+              insomnia for years, MindWell Sleep has been a lifesaver. The
+              personalized plans and diverse range of sessions keep things
+              interesting..."
               </p>
-          </div>
-      </section>
-  
+            </div>
+        </section>
+
+
+        <h2>Support</h2>
 
         <section class="support">
           <h3>Support</h3>
