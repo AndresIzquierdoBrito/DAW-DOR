@@ -11,7 +11,7 @@
     <!-- <link rel="stylesheet" href="../styles/dark mode/layout-dark.css" />
   <link rel="stylesheet" href="../styles/dark mode/layout-responsive-dark.css">> -->
 
-    <link rel="stylesheet" href="../styles/product.css" />
+    <link rel="stylesheet" href="../styles/light mode/product.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -44,9 +44,184 @@
           ><span class="user-template"></span
         ></a>
       </header>
-
+      <button>Cart</button>
       <main>
-        
+        <section class="product-zone">
+          <div class="product-media">
+            <div class="product-image-library">
+              <img src="../media/sleep.jpg" alt="Product" />
+              <img src="../media/sleep.jpg" alt="Product" />
+              <img src="../media/sleep.jpg" alt="Product" />
+            </div>
+            <div class="product-image">
+              <img src="../media/sleep.jpg" alt="Product" />
+            </div>
+          </div>
+          <div class="product-info">
+            <h2>Sleep</h2>
+            <h2>2.99&euro;</h>
+            <h3>Improve your sleep with this curated experience.</h3>
+            <section id="rating">
+              <div class="rating">
+                <span class="active">&#9733;</span>
+                <span class="active">&#9733;</span>
+                <span class="active">&#9733;</span>
+                <span class="active">&#9733;</span>
+                <span>&#9733;</span>
+                <p>25 reviews</p>
+              </div>
+            </section>
+            <p>
+              Sleep, your gateway to a restful and rejuvenating night's sleep.
+              Our guided sleep experience is meticulously designed to help you
+              unwind, relax, and achieve a deep and peaceful sleep. Say goodbye
+              to restless nights and embrace a healthier sleep routine with this
+              experience.
+            </p>
+            <ul>
+              <li>Guided Sleep Sessions</li>
+              <li>Personalized Sleep Plans</li>
+              <li>Nature Sounds and Ambient Music</li>
+              <li>Sleep Resources</li>
+              <li>Progress Tracking</li>
+              <li>Offline Access</li>
+              <li>Community Support</li>
+            </ul>
+
+            <div class="purchase-data">
+              <input type="number" name="amountProduct" id="amountProduct" value="1"/>
+              <button>Add to cart</button>
+              <button>Buy</button>
+              <p><em>Local taxes may apply in checkout.</em></p>
+            </div>
+          </div>
+        </section>
+        <h3>Content</h3>
+
+        <section id="sleep-package">
+          <table>
+            <thead>
+              <tr>
+                <th>Chapter</th>
+                <th>Content</th>
+                <th>Duration</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Introduction to MindWell Sleep</td>
+                <td>5 minutes</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Relaxation Techniques</td>
+                <td>10 minutes</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Nature Sounds Meditation</td>
+                <td>15 minutes</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Deep Breathing Exercise</td>
+                <td>8 minutes</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Progressive Muscle Relaxation</td>
+                <td>12 minutes</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Mindful Body Scan</td>
+                <td>20 minutes</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Sleep Affirmations</td>
+                <td>7 minutes</td>
+              </tr>
+              <!-- Add more rows as needed -->
+            </tbody>
+          </table>
+        </section>
+
+        <h3>Reviews</h3>
+        <section class="reviews">
+          <div class="review">
+            <div class="review-user">
+              <img src="../images/person1.jpg" alt="Person 1" />
+              <p><strong>Lisa M.</strong></p>
+            </div>
+            <div class="review-body">
+              <div class="review-rating">
+                <div class="star active">&#9733;</div>
+                <div class="star active">&#9733;</div>
+                <div class="star active">&#9733;</div>
+                <div class="star active">&#9733;</div>
+                <div class="star">&#9733;</div>
+            </div>
+            <p>
+                "MindWell
+                Sleep has been a game-changer for me! The guided sessions are
+                incredibly calming, and I love that I can customize my
+                experience..."
+            </p>
+            </div>
+          </div>
+          <div class="review">
+              <div class="review-rating">
+                  <div class="star active">&#9733;</div>
+                  <div class="star active">&#9733;</div>
+                  <div class="star active">&#9733;</div>
+                  <div class="star active">&#9733;</div>
+                  <div class="star">&#9733;</div>
+              </div>
+              <img src="person2.jpg" alt="Person 2">
+              <p>
+                  <strong>Jason B.</strong> "As someone
+                  who's struggled with insomnia for years, MindWell Sleep has been a
+                  lifesaver. The personalized plans and diverse range of sessions
+                  keep things interesting..."
+              </p>
+          </div>
+          <div class="review">
+              <div class="review-rating">
+                  <div class="star active">&#9733;</div>
+                  <div class="star active">&#9733;</div>
+                  <div class="star active">&#9733;</div>
+                  <div class="star active">&#9733;</div>
+                  <div class="star active">&#9733;</div>
+              </div>
+              <img src="person3.jpg" alt="Person 3">
+              <p>
+                  <strong>Emily S., MindWell Community Member:</strong> "Being part
+                  of the MindWell Sleep community has made my sleep journey feel
+                  less lonely. Sharing tips and experiences with others has added a
+                  social aspect to improving my sleep..."
+              </p>
+          </div>
+      </section>
+  
+
+        <section class="support">
+          <h3>Support</h3>
+          <p>
+            For any questions or concerns, please contact us through this form
+          </p>
+
+          <form>
+            <label for="name">Your question:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="message">Description:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </section>
       </main>
 
       <footer>

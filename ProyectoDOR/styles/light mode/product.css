@@ -1,0 +1,156 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+  opacity: 1;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-zone{
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+.product-media{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.product-image-library{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+.product-image-library img {
+  width: 100%;
+  max-width: 10em;
+  
+}
+
+.product-info{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 0 2em 0 2em;
+
+}
+.rating {
+  font-size: 30px;
+  color: #ccc;
+}
+
+.rating span {
+  margin-right: 5px;
+  cursor: default;
+}
+
+.rating span.active {
+  color: #ffcc00;
+}
+
+.reviews {
+  margin-top: 1em;
+  display: flex;
+  gap: 1em;
+}
+
+.review {
+  background-color: #fff;
+  border-radius: 1em;
+  width: 30%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  display: flex;
+}
+
+.review img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.review-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.review-rating .star {
+  font-size: 18px;
+  color: #ccc;
+  margin-right: 5px;
+}
+
+.review-rating .star.active {
+  color: #f8d200; /* Change to your desired active star color */
+}
+
+.reviews p {
+  margin: 0;
+}
+
+.reviews strong {
+  font-weight: bold;
+}
+
+.support {
+
+  width: 60%;
+  margin-top: 1em;
+  padding: 2em;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.support form {
+  display: grid;
+  gap: 10px;
+}
+
+.support label {
+  font-weight: bold;
+}
+
+.support input,
+.support textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.support button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.support button:hover {
+  background-color: #45a049;
+}
+
+/* Tablet size */
+
+@media screen and (min-width: 768px) {
+
+}
+
+/* Desktop size */
+
+@media screen and (min-width: 1200px) {
+
+}

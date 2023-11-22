@@ -299,7 +299,7 @@ main h2 {
       rgba(246, 246, 246, 0) 45%,
       rgba(212, 237, 237, 1) 90%
     ),
-    url(../media/stress.jpg);
+    url(../../media/stress.jpg);
 }
 
 .catalog-guides div:nth-child(2) {
@@ -309,7 +309,7 @@ main h2 {
       rgba(246, 246, 246, 0) 45%,
       rgba(212, 237, 237, 1) 90%
     ),
-    url(../media/sleep.jpg);
+    url(../../media/sleep.jpg);
 }
 
 .catalog-guides div:nth-child(3) {
@@ -319,7 +319,7 @@ main h2 {
       rgba(246, 246, 246, 0) 45%,
       rgba(212, 237, 237, 1) 90%
     ),
-    url(../media/mindfulness.jpg);
+    url(../../media/mindfulness.jpg);
 }
 
 .catalog-guides div:nth-child(4) {
@@ -329,7 +329,7 @@ main h2 {
       rgba(246, 246, 246, 0) 45%,
       rgba(212, 237, 237, 1) 90%
     ),
-    url(../media/relationships.jpg);
+    url(../../media/relationships.jpg);
 }
 
 .catalog-guides div:nth-child(5) {
@@ -339,7 +339,7 @@ main h2 {
       rgba(246, 246, 246, 0) 45%,
       rgba(212, 237, 237, 1) 90%
     ),
-    url(../media/1.jpg);
+    url(../../media/1.jpg);
 }
 
 .catalog-guides div:nth-child(6) {
@@ -349,7 +349,7 @@ main h2 {
       rgba(246, 246, 246, 0) 45%,
       rgba(212, 237, 237, 1) 90%
     ),
-    url(../media/2.jpg);
+    url(../../media/2.jpg);
 }
 
 .catalog-guides div:nth-child(7) {
@@ -359,7 +359,7 @@ main h2 {
       rgba(246, 246, 246, 0) 45%,
       rgba(212, 237, 237, 1) 90%
     ),
-    url(../media/3.jpg);
+    url(../../media/3.jpg);
 }
 
 .catalog-guides div:nth-child(8) {
@@ -369,7 +369,7 @@ main h2 {
       rgba(246, 246, 246, 0) 45%,
       rgba(212, 237, 237, 1) 90%
     ),
-    url(../media/4.jpg);
+    url(../../media/4.jpg);
 }
 
 
