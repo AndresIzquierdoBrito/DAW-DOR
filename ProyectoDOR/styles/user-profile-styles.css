@@ -119,10 +119,7 @@ input:focus:invalid {
 
 @media screen and (min-width: 768px) {
 
-  header{
-    height: 10vh;
-  }
-  
+
   .profile-info img:nth-child(1) {
     max-width: 12em;
     max-height: 12em;

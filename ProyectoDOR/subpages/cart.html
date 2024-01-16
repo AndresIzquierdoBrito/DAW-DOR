@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product</title>
+    <title>Cart</title>
 
-    <link rel="stylesheet" href="../../styles/light mode/layout.css" />
-    <link rel="stylesheet" href="../../styles/light mode/layout-responsive.css" />
-    <link rel="stylesheet" href="../../styles/light mode/checkout.css" />
+    <link rel="stylesheet" href="../styles/light mode/layout.css" />
+    <link rel="stylesheet" href="../styles/light mode/layout-responsive.css" />
+    <link rel="stylesheet" href="../styles/light mode/cart.css" />
 
-    <!-- <link rel="stylesheet" href="../../styles/dark mode/layout-dark.css" />
-    <link rel="stylesheet" href="../../styles/dark mode/layout-responsive-dark.css">
-    <link rel="stylesheet" href="../../styles/dark mode/checkout-dark.css" /> -->
+    <!-- <link rel="stylesheet" href="../styles/dark mode/layout-dark.css" />
+    <link rel="stylesheet" href="../styles/dark mode/layout-responsive-dark.css">
+    <link rel="stylesheet" href="../styles/dark mode/cart-dark.css" /> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,6 +21,7 @@
     />
     <script src="https://kit.fontawesome.com/4071e215e7.js" crossorigin="anonymous"></script>
 
+    <script src="../scripts/mainPage.js"></script>
   </head>
   <body>
     <div class="content">
@@ -31,63 +32,59 @@
           <span></span>
         </div>
         <nav>
-
+          <ul>
+            <li><a href="../main.html">Home</a></li>
+            <li><a href="../main.html">About</a></li>
+            <li><a href="../main.html">Contact</a></li>
+          </ul>
         </nav>
-        <a href="../../main.html">
+        <a href="../main.html">
           <h1 id="page-title">MindWell</h1>
         </a>
         <a class="header-avatar-link" href="./subpages/user-profile.html"
           ><span class="user-template"></span
         ></a>
       </header>
-    
+
       <main>
-        <a href="../cart.html" class="back-to-cart">
-          <i class="fa-solid fa-arrow-left"></i><p>Back to cart</p>
-        </a>
-        <div class="checkout-container">
-          <div class="checkout-steps">
-            <ol id="progress-bar">
-              <li class="step-done">Information</li>
-              <li class="step-active">Payment</li>
-              <li>Confirmation</li>
-            </ol>
-          </div>
-          
-          <h1>Payment method</h1>
-  
-          <div class="checkout-form box-template">
-            <div class="payment-methods">
-              <label>
-                <input type="radio" name="paymentMethod" value="creditCard" checked />
-                  <i class="fa-brands fa-cc-visa"></i>
-              </label>
-              <label>
-                <input type="radio" name="paymentMethod" value="paypal" />
-                  <i class="fa-brands fa-cc-paypal"></i>
-              </label>
-              <label>
-                <input type="radio" name="paymentMethod" value="bankTransfer" />
-                  <i class="fa-brands fa-google-pay"></i>
-              </label>
-            </div>
-          
-            <div class="credit-card-form payment-form">
-              <label for="cardNumber">Card Number:</label>
-              <input type="text" id="cardNumber" name="cardNumber" />
-          
-              <label for="expiryDate">Expiry Date:</label>
-              <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" />
-          
-              <label for="cvv">CVV:</label>
-              <input type="text" id="cvv" name="cvv" />
-            </div>
-  
-          </div>
-  
-          <div class="cart-summary box-template summary-container">
+        <h1 class="main-title">Your Cart</h1>
+      
+        <div class="cart-container">
+          <table class="cart-table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" name="item" id="item" class="toggle-item-cart"> Service 1</td>
+                <td><input type="number" name="amount" id="itemAmount" class="amount-items" value="2" min="1"></td>
+                <td>$50.00</td>
+                <td class="remove-td"><button class="remove-item"><i class="fa-solid fa-xmark"></i></button></td>
+
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="item" id="item" class="toggle-item-cart">Service 2</td>
+                <td><input type="number" name="amount" id="itemAmount" class="amount-items" value="3" min="1"></td>
+                <td>$50.00</td>
+                <td class="remove-td"><button class="remove-item"><i class="fa-solid fa-xmark"></i></button></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="item" id="item" class="toggle-item-cart">Service 3</td>
+                <td><input type="number" name="amount" id="itemAmount" class="amount-items" value="3" min="1"></td>
+                <td><del>$50.00</del> $40.00</td>
+                <td class="remove-td"><button class="remove-item"><i class="fa-solid fa-xmark"></i></button></td>
+
+              </tr>
+            </tbody>
+          </table>
+      
+          <div class="cart-summary box-template">
             <h2>Cart Summary</h2>
-            <table cellspacing="0" cellpadding="0">
+            <table  cellspacing="0" cellpadding="0">
               <tr>
                 <td>Service 1:</td>
                 <td>$50.00</td>
@@ -101,11 +98,13 @@
                 <td><del>$50.00</del> $40.00</td>
               </tr>
             </table>
-  
-            <p>Importe total: $170.00</p>
+            <div class="coupon">
+              <input type="text" id="couponCode" placeholder="Enter your coupon code">
+              <button type="button">Apply Coupon</button>
+          </div>            
+          <p>Importe total: $170.00</p>
+            <a href="./checkout/information.html"><button class="checkout-button">Continue to checkout</button></a>
           </div>
-          <a href="./confirm.html"><button class="next-step ">Confirm purchase</button></a>
-  
         </div>
       </main>
 

@@ -167,6 +167,7 @@ header h1 {
 }
 
 main {
+  min-height: 59vh;
   padding: 0 1em;
 }
 
@@ -292,7 +293,7 @@ main h2 {
   background-position: center !important ;
 }
 
-.catalog-guides div:nth-child(1) {
+.catalog-guides a:nth-child(1) div {
   background: linear-gradient(
       180deg,
       rgba(2, 0, 36, 0) 0%,
@@ -302,7 +303,7 @@ main h2 {
     url(../../media/stress.jpg);
 }
 
-.catalog-guides div:nth-child(2) {
+.catalog-guides a:nth-child(2) div {
   background: linear-gradient(
       180deg,
       rgba(2, 0, 36, 0) 0%,
@@ -312,7 +313,7 @@ main h2 {
     url(../../media/sleep.jpg);
 }
 
-.catalog-guides div:nth-child(3) {
+.catalog-guides a:nth-child(3) div {
   background: linear-gradient(
       180deg,
       rgba(2, 0, 36, 0) 0%,
@@ -322,7 +323,7 @@ main h2 {
     url(../../media/mindfulness.jpg);
 }
 
-.catalog-guides div:nth-child(4) {
+.catalog-guides a:nth-child(4) div {
   background: linear-gradient(
       180deg,
       rgba(2, 0, 36, 0) 0%,
@@ -332,7 +333,7 @@ main h2 {
     url(../../media/relationships.jpg);
 }
 
-.catalog-guides div:nth-child(5) {
+.catalog-guides a:nth-child(5) div {
   background: linear-gradient(
       180deg,
       rgba(2, 0, 36, 0) 0%,
@@ -342,7 +343,7 @@ main h2 {
     url(../../media/1.jpg);
 }
 
-.catalog-guides div:nth-child(6) {
+.catalog-guides a:nth-child(6) div {
   background: linear-gradient(
       180deg,
       rgba(2, 0, 36, 0) 0%,
@@ -352,7 +353,7 @@ main h2 {
     url(../../media/2.jpg);
 }
 
-.catalog-guides div:nth-child(7) {
+.catalog-guides a:nth-child(7) div {
   background: linear-gradient(
       180deg,
       rgba(2, 0, 36, 0) 0%,
@@ -362,7 +363,7 @@ main h2 {
     url(../../media/3.jpg);
 }
 
-.catalog-guides div:nth-child(8) {
+.catalog-guides a:nth-child(8) div {
   background: linear-gradient(
       180deg,
       rgba(2, 0, 36, 0) 0%,
@@ -599,6 +600,7 @@ main h2 {
 }
 
 footer {
+  margin-top: auto;
   color: #fff;
   background: #006E90;
   text-align: center;

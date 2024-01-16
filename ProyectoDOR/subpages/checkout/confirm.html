@@ -31,52 +31,58 @@
       </div>
       <nav>
         <ul>
-          <li><a href="../main.html">Home</a></li>
-          <li><a href="../main.html">About</a></li>
-          <li><a href="../main.html">Contact</a></li>
+
         </ul>
       </nav>
-      <a href="../main.html">
+      <a href="../../main.html">
         <h1 id="page-title">MindWell</h1>
       </a>
-      <a class="header-avatar-link" href="./subpages/user-profile.html"><span class="user-template"></span></a>
+      <a class="header-avatar-link" href="./../subpages/user-profile.html"><span class="user-template"></span></a>
     </header>
 
 
     <main>
+      <a href="../cart.html" class="back-to-cart">
+        <i class="fa-solid fa-arrow-left"></i><p>Back to cart</p>
+      </a>
       <div class="checkout-container">
         <div class="checkout-steps">
           <ol id="progress-bar">
             <li class="step-done">Information</li>
-            <li class="step-active">Payment</li>
-            <li class="step-todo">Confirmation</li>
+            <li class="step-done">Payment</li>
+            <li class="step-active">Confirmation</li>
           </ol>
         </div>
         
-        
         <h1>Confirm purchase</h1>
 
-        <div class="checkout-form">
-          <div class="product-list">
-            <p>Product 1</p>
-            <p>Product 2</p>
-          </div>
-
-          <form action="">
-          </form>
-        </div>
-
-        <div class="summary-container">
-          <h2>Order Summary</h2>
-          <ul class="product-summary">
-            <li>Product 1</li>
-            <li>Product 2</li>
+        <section class="selected-items">
+          <h2>Selected Items</h2>
+          <ul>
+            <li>Service 1: $50.00</li>
+            <li>Service 2: $30.00</li>
+            <li>Service 3: $90.00</li>
           </ul>
-          <p>Total: $100</p>
-        </div>
-        <a href="#">
-          <div>Upgrade</div>
-        </a>
+        </section>
+      
+        <section class="payment-info">
+          <h2>Payment Information</h2>
+          <p>Payment Method: Credit Card</p>
+          <p>Card Number: **** **** **** 1234</p>
+          <p>Expiry Date: 12/23</p>
+        </section>
+      
+        <section class="promotion-info">
+          <h2>Promotion Information</h2>
+          <p>Promotion Code: ABC123</p>
+          <p>Discounted Amount: $10.00</p>
+        </section>
+      
+        <section class="final-amount">
+          <h2>Final Amount</h2>
+          <p>Total Amount: $160.00</p>
+        </section>
+        <button class="finish-payment-button">Finish Payment</button>
 
       </div>
     </main>
