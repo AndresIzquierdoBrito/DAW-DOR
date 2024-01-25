@@ -6,22 +6,24 @@ a {
 .profile-user-info div {
   display: flex;
   flex-direction: column;
+  
 }
 
 .profile-picture {
+  margin-left: 0em;
   position: relative;
 }
 
 .profile-picture img:nth-child(1) {
   border-radius: 50%;
   margin-right: 10px;
-  max-width: 50vw;
-  max-height: 50vw;
+  max-width: 40vw;
+  max-height: 40vw;
 }
 .profile-picture img:nth-child(2) {
   position: absolute;
-  width: 12vw;
-  height: 12vw;
+  width: 8vw;
+  height: 8vw;
   right: 5vw;
   bottom: 3vh;
 }
@@ -57,6 +59,9 @@ main h2 {
   color: grey;
 }
 
+.profile-info a {
+  margin-left: 5em;
+}
 
 
 input[value="Edit profile"] {

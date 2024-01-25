@@ -421,7 +421,7 @@ main h2 {
   margin: 1em 0;
 }
 
-.unlock-all-button {
+.default-button {
   display: inline-block;
   outline: none;
   cursor: pointer;
@@ -443,7 +443,7 @@ main h2 {
   height: 48px;
 }
 
-.unlock-all-button:hover {
+.default-button:hover {
   background-color: #004257;
   border-color: #004257;
   color: #fff;

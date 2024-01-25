@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Edit profile</title>
-    <link rel="stylesheet" href="../styles/light mode/layout.css" />
-    <link rel="stylesheet" href="../styles/light mode/layout-responsive.css" />
+    <link rel="stylesheet" href="../styles/light_mode/layout.css">
+    <link rel="stylesheet" href="../styles/light_mode/layout-responsive.css">
   
     <!-- MODO OSCURO, DESCOMENTAR -->
-    <!-- <link rel="stylesheet" href="../styles/dark mode/layout-dark.css" />
-    <link rel="stylesheet" href="../styles/dark mode/layout-responsive-dark.css"> -->
+    <!-- <link rel="stylesheet" href="../styles/dark_mode/layout-dark.css" >
+    <link rel="stylesheet" href="../styles/dark_mode/layout-responsive-dark.css"> -->
 
-    <link rel="stylesheet" href="../styles/user-profile-styles.css" />
+    <link rel="stylesheet" href="../styles/user-profile-styles.css" >
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap"
       rel="stylesheet"
-    />
+    >
     <script src="https://kit.fontawesome.com/4071e215e7.js" crossorigin="anonymous"></script>
 
     <script src="../scripts/mainPage.js" defer></script>
@@ -40,7 +40,7 @@
           </ul>
         </nav>
         <a href="../main.html">
-          <h1 id="page-title">MindWell</h1>
+          <p id="page-title">MindWell</p>
         </a>
         <a  class="header-avatar-link" href="./subpages/user-profile.html"
           ><span class="user-template"></span
@@ -49,8 +49,8 @@
 
       <main class="profile-info">
         <div class="profile-picture">
-          <img src="../media/user-avatar.png" alt="your profile picture" />
-          <img src="../media/change-picture.png" alt="change picture" />
+          <img src="../media/user-avatar.png" alt="Your profile picture" >
+          <img src="../media/change-picture.png" alt="Change picture indicator" >
         </div>
         <form action="#" method="post">
           <div class="profile-user-info">
@@ -64,7 +64,7 @@
                 pattern="^([A-ZÀ-ÿ][a-zÀ-ÿ.,' -]*)$"
                 placeholder="John"
                 maxlength="60"
-              />
+              >
             </div>
             <div>
               <label class="label" for="surname">Surname</label>
@@ -76,27 +76,27 @@
                 placeholder="Doe"
                 pattern="^([A-ZÀ-ÿ][a-zÀ-ÿ.,' -]*)$"
                 maxlength="60"
-              />
+              >
             </div>
             <div>
-              <label class="label" for="email">Email</label>
+              <label class="label" for="userEmail">Email</label>
               <input
                 type="email"
-                name="email"
-                id="email"
+                name="userEmail"
+                id="userEmail"
                 required
                 placeholder="johndoe@example.com"
                 pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,63}|[0-9]{1,3})(\]?)$"
-              />
+              >
             </div>
             <div>
               <label class="label" for="birthday">Birthday</label>
-              <input type="date" name="birthday" required id="birthday" />
+              <input type="date" name="birthday" required id="birthday" >
             </div>
             <div>
               <label class="label" for="gender">Gender</label>
               <select name="gender" id="gender" required>
-                <option value="" disabled selected></option>
+                <option value="" disabled selected>&nbsp;</option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
                 <option value="non-binary">Non-binary</option>
@@ -111,17 +111,17 @@
                 id="phone"
                 required
                 placeholder="600 123 456"
-                pattern="^(?!7[5-9]|8[09]|9[09])[789]([- \.]*\d){8}$"/>
+                pattern="^(?!7[5-9]|8[09]|9[09])[789]([- \.]*\d){8}$">
             </div>
             <div>
-              <label class="label" for="email">Country</label>
+              <label class="label" for="country">Country</label>
               <input
                 list="countries"
                 name="country"
                 id="country"
                 required
                 placeholder="Spain"
-              />
+              >
             </div>
             <div>
               <label class="label" for="address">Address</label>
@@ -131,13 +131,11 @@
                 id="address"
                 required
                 placeholder="Calle Falsa 123"
-              />
+              >
             </div>
           </div>
         </form>
-        <a href="user-profile.html">
-          <input type="button" value="Update profile" />
-        </a>
+        <a href="user-profile.html" class="default-button">Update profile</a>
       </main>
 
       <footer>
@@ -167,14 +165,14 @@
           </ul>
           <div class="email-contact">
             <p>Stay updated on everything MindWell</p>
-            <form action="">
+            <form action="post">
               <input
                 type="email"
                 name="email"
                 id="email"
                 placeholder="Your email here"
-              />
-              <input type="submit" value="Subscribe" id="submit" />
+              >
+              <input type="submit" value="Subscribe" id="submit" >
             </form>
           </div>
           <ul class="footer-info-links">

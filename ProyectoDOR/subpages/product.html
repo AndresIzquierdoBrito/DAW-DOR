@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
 
-    <link rel="stylesheet" href="../styles/light mode/layout.css" />
-    <link rel="stylesheet" href="../styles/light mode/layout-responsive.css" />
-    <link rel="stylesheet" href="../styles/light mode/product.css" />
+    <link rel="stylesheet" href="../styles/light_mode/layout.css" >
+    <link rel="stylesheet" href="../styles/light_mode/layout-responsive.css" >
+    <link rel="stylesheet" href="../styles/light_mode/product.css" >
 
-    <!-- <link rel="stylesheet" href="../styles/dark mode/layout-dark.css" />
-    <link rel="stylesheet" href="../styles/dark mode/layout-responsive-dark.css">
-    <link rel="stylesheet" href="../styles/dark mode/product-dark.css" /> -->
+    <!-- <link rel="stylesheet" href="../styles/dark_mode/layout-dark.css" >
+    <link rel="stylesheet" href="../styles/dark_mode/layout-responsive-dark.css">
+    <link rel="stylesheet" href="../styles/dark_mode/product-dark.css" > -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap"
       rel="stylesheet"
-    />
+    >
     <script src="https://kit.fontawesome.com/4071e215e7.js" crossorigin="anonymous"></script>
 
     <script src="../scripts/mainPage.js"></script>
@@ -63,30 +63,28 @@
           </ul>
         </nav>
         <a href="../main.html">
-          <h1 id="page-title">MindWell</h1>
+          <p id="page-title">MindWell</p>
         </a>
         <a class="header-avatar-link" href="./subpages/user-profile.html"
           ><span class="user-template"></span
         ></a>
       </header>
       
-      <a href="./cart.html" style="text-decoration: none;">
-        <button class="cart-btn">
-          <img src="../media/cart.png" alt="cart image" />
-        </button>
+      <a href="./cart.html" style="text-decoration: none;" class="cart-btn">
+          <img src="../media/cart.png" alt="cart image" >
       </a>
       
 
       <main>
-        <section class="product-zone">
+        <div class="product-zone">
           <div class="product-media">
             <div class="product-image-library">
-              <img src="../media/sleep.jpg" alt="Product" />
-              <img src="../media/sleep.jpg" alt="Product" />
-              <img src="../media/sleep.jpg" alt="Product" />
+              <img src="../media/sleep.jpg" alt="Product top image" >
+              <img src="../media/sleep.jpg" alt="Product middle image" >
+              <img src="../media/sleep.jpg" alt="Product bottom image" >
             </div>
             <div class="product-image">
-              <img src="../media/sleep.jpg" alt="Product" />
+              <img src="../media/sleep.jpg" alt="Product main image">
             </div>
           </div>
 
@@ -94,7 +92,7 @@
             <div class="product-info">
               <h1>Sleep</h1>
               <h3>Improve your sleep with this curated experience.</h3>
-              <section id="rating">
+              <div id="rating">
                 <div class="rating">
                   <span class="active">&#9733;</span>
                   <span class="active">&#9733;</span>
@@ -103,7 +101,7 @@
                   <span>&#9733;</span>
                 </div>
                 <p>25 reviews</p>
-              </section>
+              </div>
               <p>
                 Sleep, your gateway to a restful and rejuvenating night's sleep.
                 Our guided sleep experience is meticulously designed to help you
@@ -130,19 +128,19 @@
                 name="amountProduct"
                 id="amountProduct"
                 value="1"
-              />
+              >
               <div class="add-cart">
                 <button>Add to cart</button>
-                <img src="../media/heart.png" alt="" />
+                <img src="../media/heart.png" alt="Favortie button" >
               </div>
               <button>Buy</button>
               <p><em>Local taxes may apply in checkout.</em></p>
             </div>
           </div>
-        </section>
+        </div>
 
-        <h2>Content</h2>
-        <section id="sleep-package">
+        <div id="sleep-package">
+          <h2>Content</h2>
           <table class="content-table">
             <thead>
               <tr class="">
@@ -187,7 +185,6 @@
                 <td>Sleep Affirmations</td>
                 <td>7 minutes</td>
               </tr>
-              <!-- Add more rows as needed -->
             </tbody>
             <tfoot>
               <tr>
@@ -196,13 +193,13 @@
               </tr>
             </tfoot>
           </table>
-        </section>
+        </div>
 
         <h2>Reviews</h2>
-        <section class="reviews">
+        <div class="reviews">
           <div class="review">
             <div class="review-user">
-              <img src="../media/avatar.png" alt="Person 1" />
+              <img src="../media/avatar.png" alt="User avatar" >
               <p><strong>Lisa M.</strong></p>
             </div>
             <div class="review-body">
@@ -222,7 +219,7 @@
           </div>
           <div class="review">
             <div class="review-user">
-              <img src="../media/avatar.png" alt="Person 1" />
+              <img src="../media/avatar.png" alt="User avatar" >
               <p><strong>Jason B.</strong></p>
             </div>
             <div class="review-body">
@@ -243,7 +240,7 @@
           </div>
           <div class="review">
             <div class="review-user">
-              <img src="../media/avatar.png" alt="Person 1" />
+              <img src="../media/avatar.png" alt="User avatar" >
               <p><strong>Emily S.</strong></p>
             </div>
             <div class="review-body">
@@ -261,27 +258,28 @@
               interesting..."
               </p>
             </div>
-        </section>
+          </div>
+        </div>
 
 
         <h2>Support</h2>
 
-        <section class="support">
+        <div class="support">
           <h3>Support</h3>
           <p>
             For any questions or concerns, please contact us through this form
           </p>
 
-          <form>
+          <form method="post">
             <label for="name">Your question:</label>
-            <input type="text" id="name" name="name" required />
+            <input type="text" id="name" name="name" required >
 
             <label for="message">Description:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
 
             <button type="submit">Submit</button>
           </form>
-        </section>
+        </div>
       </main>
 
       <footer>
@@ -311,14 +309,14 @@
           </ul>
           <div class="email-contact">
             <p>Stay updated on everything MindWell</p>
-            <form action="">
+            <form action="post">
               <input
                 type="email"
                 name="email"
                 id="email"
                 placeholder="Your email here"
-              />
-              <input type="submit" value="Subscribe" id="submit" />
+              >
+              <input type="submit" value="Subscribe" id="submit" >
             </form>
           </div>
           <ul class="footer-info-links">

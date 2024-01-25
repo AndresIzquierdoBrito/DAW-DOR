@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Cart</title>
 
-    <link rel="stylesheet" href="../styles/light mode/layout.css" />
-    <link rel="stylesheet" href="../styles/light mode/layout-responsive.css" />
-    <link rel="stylesheet" href="../styles/light mode/cart.css" />
+    <link rel="stylesheet" href="../styles/light_mode/layout.css" >
+    <link rel="stylesheet" href="../styles/light_mode/layout-responsive.css" >
+    <link rel="stylesheet" href="../styles/light_mode/cart.css" >
 
-    <!-- <link rel="stylesheet" href="../styles/dark mode/layout-dark.css" />
-    <link rel="stylesheet" href="../styles/dark mode/layout-responsive-dark.css">
-    <link rel="stylesheet" href="../styles/dark mode/cart-dark.css" /> -->
+    <!-- <link rel="stylesheet" href="../styles/dark_mode/layout-dark.css" >
+    <link rel="stylesheet" href="../styles/dark_mode/layout-responsive-dark.css">
+    <link rel="stylesheet" href="../styles/dark_mode/cart-dark.css" > -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap"
       rel="stylesheet"
-    />
+    >
     <script src="https://kit.fontawesome.com/4071e215e7.js" crossorigin="anonymous"></script>
 
     <script src="../scripts/mainPage.js"></script>
@@ -39,7 +39,7 @@
           </ul>
         </nav>
         <a href="../main.html">
-          <h1 id="page-title">MindWell</h1>
+          <p id="page-title">MindWell</p>
         </a>
         <a class="header-avatar-link" href="./subpages/user-profile.html"
           ><span class="user-template"></span
@@ -56,35 +56,34 @@
                 <th>Item</th>
                 <th>Quantity</th>
                 <th>Total</th>
+                <th class="remove-td"></th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><input type="checkbox" name="item" id="item" class="toggle-item-cart"> Service 1</td>
-                <td><input type="number" name="amount" id="itemAmount" class="amount-items" value="2" min="1"></td>
-                <td>$50.00</td>
-                <td class="remove-td"><button class="remove-item"><i class="fa-solid fa-xmark"></i></button></td>
-
-              </tr>
-              <tr>
-                <td><input type="checkbox" name="item" id="item" class="toggle-item-cart">Service 2</td>
-                <td><input type="number" name="amount" id="itemAmount" class="amount-items" value="3" min="1"></td>
+                <td><input type="checkbox" name="item1" id="item1" class="toggle-item-cart"> Service 1</td>
+                <td><input type="number" name="amount" id="itemAmount1" class="amount-items" value="2" min="1"></td>
                 <td>$50.00</td>
                 <td class="remove-td"><button class="remove-item"><i class="fa-solid fa-xmark"></i></button></td>
               </tr>
               <tr>
-                <td><input type="checkbox" name="item" id="item" class="toggle-item-cart">Service 3</td>
-                <td><input type="number" name="amount" id="itemAmount" class="amount-items" value="3" min="1"></td>
+                <td><input type="checkbox" name="item2" id="item2" class="toggle-item-cart">Service 2</td>
+                <td><input type="number" name="amount" id="itemAmount2" class="amount-items" value="3" min="1"></td>
+                <td>$50.00</td>
+                <td class="remove-td"><button class="remove-item"><i class="fa-solid fa-xmark"></i></button></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="item3" id="item3" class="toggle-item-cart">Service 3</td>
+                <td><input type="number" name="amount" id="itemAmount3" class="amount-items" value="3" min="1"></td>
                 <td><del>$50.00</del> $40.00</td>
                 <td class="remove-td"><button class="remove-item"><i class="fa-solid fa-xmark"></i></button></td>
-
               </tr>
             </tbody>
           </table>
       
           <div class="cart-summary box-template">
             <h2>Cart Summary</h2>
-            <table  cellspacing="0" cellpadding="0">
+            <table >
               <tr>
                 <td>Service 1:</td>
                 <td>$50.00</td>
@@ -103,7 +102,7 @@
               <button type="button">Apply Coupon</button>
           </div>            
           <p>Importe total: $170.00</p>
-            <a href="./checkout/information.html"><button class="checkout-button">Continue to checkout</button></a>
+            <a href="./checkout/information.html" class="checkout-button">Continue to checkout</a>
           </div>
         </div>
       </main>
@@ -135,14 +134,14 @@
           </ul>
           <div class="email-contact">
             <p>Stay updated on everything MindWell</p>
-            <form action="">
+            <form action="post">
               <input
                 type="email"
                 name="email"
                 id="email"
                 placeholder="Your email here"
-              />
-              <input type="submit" value="Subscribe" id="submit" />
+              >
+              <input type="submit" value="Subscribe" id="submit" >
             </form>
           </div>
           <ul class="footer-info-links">

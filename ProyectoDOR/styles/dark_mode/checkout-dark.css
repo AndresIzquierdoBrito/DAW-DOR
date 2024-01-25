@@ -180,7 +180,6 @@ main {
   grid-area: 4 / 2 / 5 / 3;
   width: 100%;
   text-align: center;
-  padding-top: 2em;
   cursor: pointer;
 }
 
@@ -238,8 +237,8 @@ main {
   border: none;
   margin-top: .6em;
   border-radius: 5px;
-  cursor: pointer;
   transition: all .2s ease-in-out;
+  vertical-align: middle;
 }
 
 .checkout-form {

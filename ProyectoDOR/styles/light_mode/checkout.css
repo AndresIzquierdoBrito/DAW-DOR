@@ -180,7 +180,6 @@ main {
   grid-area: 4 / 2 / 5 / 3;
   width: 100%;
   text-align: center;
-  padding-top: 2em;
   cursor: pointer;
 }
 
@@ -208,6 +207,8 @@ main {
 
 .cart-summary table {
   width: 95%;
+  border-spacing: 0; 
+  border-collapse: collapse;
 }
 
 
@@ -240,6 +241,7 @@ main {
   border-radius: 5px;
   cursor: pointer;
   transition: all .2s ease-in-out;
+  text-decoration: none;
 }
 
 .checkout-form {
