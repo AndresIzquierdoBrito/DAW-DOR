@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product</title>
+
+  <link rel="stylesheet" href="../styles/light_mode/layout.css">
+  <link rel="stylesheet" href="../styles/light_mode/layout-responsive.css">
+  <link rel="stylesheet" href="../styles/light_mode/about.css">
+
+  <!-- <link rel="stylesheet" href="../styles/dark_mode/layout-dark.css" >
+    <link rel="stylesheet" href="../styles/dark_mode/layout-responsive-dark.css">
+    <link rel="stylesheet" href="../styles/dark_mode/about-dark.css" > -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4071e215e7.js" crossorigin="anonymous"></script>
+
+  <script src="../scripts/mainPage.js"></script>
+</head>
+
+<body>
+
+  <div class="content">
+    <header>
+      <div class="hamburger-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../main.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="../main.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="../main.html">
+        <p id="page-title">MindWell</p>
+      </a>
+      <a class="header-avatar-link" href="./subpages/user-profile.html"><span class="user-template"></span></a>
+    </header>
+
+    <section id="actividad">
+      <h2>Actividad Comercial</h2>
+      <img src="foto1.jpg" alt="Fotografía 1">
+      <img src="foto2.jpg" alt="Fotografía 2">
+      <img src="foto3.jpg" alt="Fotografía 3">
+      <img src="grafico1.png" alt="Gráfico 1">
+      <img src="grafico2.png" alt="Gráfico 2" role="img" aria-label="Descripción del gráfico 2">
+      <img src="decorativa.jpg" alt="" aria-hidden="true">
+    </section>
+
+    <section id="equipo">
+      <h2>Equipo Profesional</h2>
+      <p>Texto sobre el equipo...</p>
+    </section>
+
+    <section id="historia">
+      <h2>Historia</h2>
+      <p>Texto sobre la historia...</p>
+    </section>
+
+    <section id="video">
+      <h2>Vídeo</h2>
+      <iframe width="560" height="315" src="../media/videos/cutepandas.mp4"
+        title="Vídeo de la empresa, o muchos pandas" frameborder="0" allowfullscreen autostart="false"></iframe>
+        <!-- crear transcripcion en una pagina aparte, sin estilos, times new roman, del video -->
+    </section>
+
+    <section id="tabla">
+      <h2>Tabla</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Columna 1</th>
+            <th>Columna 2</th>
+            <th>Columna 3</th>
+            <th>Columna 4</th>
+            <th>Columna 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dato 1</td>
+            <td>Dato 2</td>
+            <td>Dato 3</td>
+            <td>Dato 4</td>
+            <td>Dato 5</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="parrafos">
+      <h2>Párrafos</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    </section>
+    </main>
+
+    <footer>
+      <div class="footer-rows">
+        <h3>Contact</h3>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/">
+              <i class="fa-brands fa-facebook"></i> Facebook
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/">
+              <i class="fa-brands fa-twitter"></i> Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/">
+              <i class="fa-brands fa-instagram"></i> Twitter
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/">
+              <i class="fa-brands fa-tiktok"></i> TikTok
+            </a>
+          </li>
+        </ul>
+        <div class="email-contact">
+          <p>Stay updated on everything MindWell</p>
+          <form action="post">
+            <input type="email" name="email" id="email" placeholder="Your email here">
+            <input type="submit" value="Subscribe" id="submit">
+          </form>
+        </div>
+        <ul class="footer-info-links">
+          <li><a href="about.html">Privacy Policy</a></li>
+          <li><a href="about.html">Terms & Conditions</a></li>
+          <li><a href="about.html">Cookie Consent</a></li>
+          <li><a href="about.html">Accessibility</a></li>
+        </ul>
+      </div>
+      <p>©2023 MindWell, All Rights Reserved</p>
+    </footer>
+  </div>
+</body>
+
+</html>
