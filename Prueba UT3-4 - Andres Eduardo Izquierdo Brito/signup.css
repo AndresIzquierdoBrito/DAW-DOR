@@ -1,0 +1,200 @@
+/* Usabilidad - Ejercicio 1 */
+
+.ok {
+  color: green;
+}
+
+.alert {
+  color: orange;
+}
+
+.error {
+  color: red;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/* Usabilidad - Ejercicio 2 */
+
+.textField{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 1.5em;
+  grid-row-gap: .5em;
+  margin-top: 2em;
+}
+
+.checkboxFields{
+  margin-top: 2em;
+}
+
+.checkboxFields div {
+  display: flex;
+  gap: 1em;
+}
+
+.formButtons {
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all .5s;
+}
+
+/* Usabilidad - Ejercicio 3 */
+
+#createButton {
+  background-color: var(--emph-color);
+  color: var(--main-bg-color);
+}
+
+#cancelButton {
+  background-color: var(--bg-color);
+  margin-left: 1em;
+  color: var(--fg-color);
+}
+
+button:hover,
+button:focus {
+  outline: none;
+  scale: 1.1;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+  --bg-color: #ecc;
+  --fg-color: #622;
+  --emph-color: #922;
+  --main-bg-color:#fff;
+  font-family: Montserrat;
+  font-size: 10pt;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--bg-color);
+  max-width: 100%;
+
+}
+
+header, nav, main, footer {
+  width:60%;
+  margin: auto;
+}
+
+header > img {
+  width: 100%;
+}
+
+main {
+  background-color: var(--main-bg-color);
+  min-height: 100vh;
+  
+  
+
+}
+.content {
+  padding: 1em 10em;
+}
+
+
+p {
+  margin-bottom:  2em;
+}
+
+.message {
+  display: block;
+}
+
+nav {
+padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: var(--fg-color);
+  border: 3px solid var(--fg-color);
+}
+
+.menu-opt {
+  font-size: 1.25em;
+
+  height: fit-content;
+  align-items: center;
+  height: 1.5em;
+  padding-top: 0.25em;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  /*border: 2px solid var(--bg-color);*/
+  color: var(--bg-color);
+  background-color: var(--fg-color);
+}
+
+nav:last-child {
+  color: var(--fg-color);
+  background-color: var(--bg-color);
+  font-weight: bold;
+}
+
+.menu-opt:hover {
+  border-color: var(--fg-color);
+  color: var(--fg-color);
+  background-color: var(--bg-color);
+
+}
+
+footer {
+  background-color: #333;
+  color: #ddd;
+  padding: 1em 5em;
+  bottom: 0;
+}
+
+footer > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+@media screen and (max-width: 576px) {
+  header, nav, main, footer {
+    width:90%;
+    margin: auto;
+  }
+
+  .textField {
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    padding: 1em 3em;
+  }
+  
+  .checkboxFields div{
+    margin-top: .6em;
+  }
+}
